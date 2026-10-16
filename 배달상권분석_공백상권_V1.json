@@ -1,0 +1,235 @@
+{
+  "name": "공백상권 분석 V1 - 247개 업종",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "34129cf9-1c54-4836-b30e-f55d0ee2faf0",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        220,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c7b8102c-21d0-42de-8b6c-504a29c710e4",
+              "name": "address",
+              "value": "주소를 여기에 입력하세요",
+              "type": "string"
+            },
+            {
+              "id": "eb7bbf89-bcaf-49d3-8e1c-e9db0197ff50",
+              "name": "request_id",
+              "value": "={{ 'GAP-' + $execution.id }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "40389b2b-3ec5-442b-9f8c-9182f3d6da72",
+      "name": "Analysis Input",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        440,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "language": "javaScript",
+        "jsCode": "const item = $input.first().json;\nconst address = String(item.address || '').trim();\nif (!address || address === '주소를 여기에 입력하세요') throw new Error('Analysis Input 노드에 분석 주소 한 곳을 입력해 주세요.');\nreturn [{ json: { ...item, address } }];"
+      },
+      "id": "d9f41bd9-3422-4158-ad44-7bbf8ebb3057",
+      "name": "Validate Analysis Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        650,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "url": "https://dapi.kakao.com/v2/local/search/address.json",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "query",
+              "value": "={{ $json.address }}"
+            }
+          ]
+        },
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "c3243896-2a55-4dc9-b642-a34c544a8881",
+      "name": "Kakao Address",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        860,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "language": "javaScript",
+        "jsCode": "const envelope = $input.first().json;\nconst input = $('Analysis Input').first().json;\nconst response = envelope && envelope.body && typeof envelope.body === 'object' ? envelope.body : envelope;\nconst statusCode = envelope && envelope.statusCode != null ? Number(envelope.statusCode) : null;\nif (statusCode !== null && (!Number.isFinite(statusCode) || statusCode < 200 || statusCode >= 300)) throw new Error('Kakao address lookup failed with HTTP ' + statusCode + '.');\nconst matches = Array.isArray(response.documents) ? response.documents : [];\nif (matches.length !== 1) throw new Error('Kakao 주소 검색 결과가 ' + matches.length + '건입니다. 정확히 한 곳으로 좁혀지는 주소를 입력해 주세요.');\nconst match = matches[0];\nconst latitude = Number(match.y);\nconst longitude = Number(match.x);\nif (!Number.isFinite(latitude) || !Number.isFinite(longitude) || Math.abs(latitude) > 90 || Math.abs(longitude) > 180) throw new Error('주소 변환 결과의 좌표가 올바르지 않습니다.');\nconst normalized = match.road_address?.address_name || match.address?.address_name || match.address_name || input.address;\nreturn [{ json: { request_id: input.request_id, address: input.address, normalized_address: normalized, latitude, longitude, geocode_match_count: matches.length, kakao_http_status: statusCode } }];"
+      },
+      "id": "0321b78e-4159-4f5a-a716-e18dd86dca12",
+      "name": "Validate Address and Coordinates",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1100,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "method": "POST",
+        "url": "http://127.0.0.1:8765/analyze",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "2a5e2e4c-dbf1-49d0-9eb9-36041f76f4b6",
+      "name": "Analyze 247 Categories",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        1380,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "language": "javaScript",
+        "jsCode": "const envelope = $input.first().json;\nconst result = envelope && envelope.body && typeof envelope.body === 'object' ? envelope.body : envelope;\nconst statusCode = envelope && envelope.statusCode != null ? Number(envelope.statusCode) : null;\nif (statusCode !== null && (!Number.isFinite(statusCode) || statusCode < 200 || statusCode >= 300)) throw new Error('Analyzer request failed with HTTP ' + statusCode + '.');\nif (result.geocode_match_count !== 1) throw new Error('정확히 1건의 주소 매치가 확인되지 않아 분석 결과를 차단했습니다.');\nif (result.status !== 'analysis_complete') throw new Error('분석이 완전히 끝나지 않았습니다. 결과를 고객에게 전달하지 마세요.');\nif (result.publishable !== true || result.publication_gate !== 'passed') throw new Error('publication gate를 통과하지 못했습니다. 결과를 고객에게 전달하지 마세요.');\nif (!result.coverage || result.coverage.category_count !== 247 || result.coverage.unclassified_category_count !== 0) throw new Error('247개 업종 전체 검증 또는 분류 완전성 조건을 충족하지 못했습니다.');\nif (!Array.isArray(result.overall_top20) || result.overall_top20.length !== 20) throw new Error('전체 TOP20 결과가 완전하지 않습니다.');\nif (!Array.isArray(result.a_top10) || result.a_top10.length !== 10) throw new Error('A형 TOP10 결과가 완전하지 않습니다.');\nreturn [{ json: { ...result, analyzer_http_status: statusCode, operator_action: '고객 전달 검토 가능' } }];"
+      },
+      "id": "963b4765-c80d-4bcb-88c4-18fa6508c484",
+      "name": "Verify Results and Publication Gate",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1660,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Analysis Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analysis Input": {
+      "main": [
+        [
+          {
+            "node": "Validate Analysis Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Analysis Input": {
+      "main": [
+        [
+          {
+            "node": "Kakao Address",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Kakao Address": {
+      "main": [
+        [
+          {
+            "node": "Validate Address and Coordinates",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Address and Coordinates": {
+      "main": [
+        [
+          {
+            "node": "Analyze 247 Categories",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Analyze 247 Categories": {
+      "main": [
+        [
+          {
+            "node": "Verify Results and Publication Gate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "68420777-a0d6-4638-b6aa-feb2f206e50b",
+  "meta": {
+    "credentialsConfigured": false
+  },
+  "tags": []
+}

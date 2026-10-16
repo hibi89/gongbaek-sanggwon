@@ -1,0 +1,13 @@
+{
+  "database_state": "complete",
+  "snapshot_id": "semas-20260630-57aa36154410",
+  "source_as_of": "2026-06-30",
+  "source_url": "https://www.data.go.kr/data/15083033/fileData.do",
+  "taxonomy_version": "semas-20260630-taxonomy-v3-abc-6048205a8203-sha256-2fba22711d8fb289",
+  "taxonomy_hash": "2fba22711d8fb28916546c475168da64f1af1a6c06bdf64abfd199566adb9ed0",
+  "abc_status": "owner_approved",
+  "abc_unclassified_count": "0",
+  "analysis_engine_version": "0.1.0",
+  "store_rows": "2772484",
+  "category_count": "247"
+}

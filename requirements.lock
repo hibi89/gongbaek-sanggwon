@@ -1,0 +1,9 @@
+# Validated with CPython 3.12.14 on Windows x64.
+# Runtime packages required for PDF/XLSX generation; transitive runtime
+# dependencies are pinned as well so installation does not float by release.
+charset-normalizer==3.5.1
+et-xmlfile==2.0.0
+openpyxl==3.1.5
+Pillow==12.3.0
+pypdf==6.10.0
+reportlab==4.4.9

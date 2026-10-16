@@ -1,0 +1,4692 @@
+{
+  "status": "validated",
+  "validated_at": "2026-10-01T04:35:01.046022+00:00",
+  "source_as_of": "2026-06-30",
+  "source_url": "https://www.data.go.kr/data/15083033/fileData.do",
+  "zip_crc_check": "passed",
+  "taxonomy_path": "설계\\03_업종분류표.json",
+  "taxonomy_code_count": 247,
+  "csv_member_count": 16,
+  "csv_members": [
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_강원_202606.csv",
+      "uncompressed_bytes": 62582792,
+      "compressed_bytes": 13796695,
+      "rows": 110206
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_경기_202606.csv",
+      "uncompressed_bytes": 368502053,
+      "compressed_bytes": 90829183,
+      "rows": 672680
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_경남_202606.csv",
+      "uncompressed_bytes": 94792849,
+      "compressed_bytes": 21932933,
+      "rows": 172887
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_경북_202606.csv",
+      "uncompressed_bytes": 78004984,
+      "compressed_bytes": 18284375,
+      "rows": 144967
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_대구_202606.csv",
+      "uncompressed_bytes": 63309879,
+      "compressed_bytes": 14161290,
+      "rows": 118357
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_대전_202606.csv",
+      "uncompressed_bytes": 43012055,
+      "compressed_bytes": 9171705,
+      "rows": 80704
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_부산_202606.csv",
+      "uncompressed_bytes": 86867744,
+      "compressed_bytes": 19675560,
+      "rows": 159689
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_서울_202606.csv",
+      "uncompressed_bytes": 301889640,
+      "compressed_bytes": 71884065,
+      "rows": 554092
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_세종_202606.csv",
+      "uncompressed_bytes": 9912521,
+      "compressed_bytes": 1651758,
+      "rows": 15816
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_울산_202606.csv",
+      "uncompressed_bytes": 28962806,
+      "compressed_bytes": 6125049,
+      "rows": 54737
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_인천_202606.csv",
+      "uncompressed_bytes": 75353122,
+      "compressed_bytes": 16440504,
+      "rows": 136995
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_전남광주_202606.csv",
+      "uncompressed_bytes": 103015803,
+      "compressed_bytes": 22939340,
+      "rows": 175276
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_전북_202606.csv",
+      "uncompressed_bytes": 57408247,
+      "compressed_bytes": 12376936,
+      "rows": 98749
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_제주_202606.csv",
+      "uncompressed_bytes": 33597481,
+      "compressed_bytes": 6626123,
+      "rows": 59009
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_충남_202606.csv",
+      "uncompressed_bytes": 68319780,
+      "compressed_bytes": 15348491,
+      "rows": 124589
+    },
+    {
+      "member": "소상공인시장진흥공단_상가(상권)정보_충북_202606.csv",
+      "uncompressed_bytes": 52075833,
+      "compressed_bytes": 11448926,
+      "rows": 93731
+    }
+  ],
+  "total_source_rows": 2772484,
+  "observed_category_code_count": 247,
+  "unobserved_taxonomy_codes": [],
+  "codes_outside_taxonomy": [],
+  "category_name_mismatches": [],
+  "category_hierarchy_conflicts": [],
+  "duplicate_store_id_rows": 0,
+  "missing_store_id_rows": 0,
+  "missing_category_code_rows": 0,
+  "missing_coordinate_rows": 0,
+  "invalid_coordinate_rows": 0,
+  "coordinate_plausibility": {
+    "bounds": {
+      "longitude_min": 124.0,
+      "longitude_max": 132.5,
+      "latitude_min": 32.5,
+      "latitude_max": 39.5
+    },
+    "outlier_rows": 0,
+    "examples": []
+  },
+  "coordinate_plausibility_outlier_rows": 0,
+  "category_counts": [
+    {
+      "code": "G20201",
+      "taxonomy_name": "타이어 소매업",
+      "snapshot_names": [
+        "타이어 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G202",
+          "medium_name": "자동차 부품 소매",
+          "small_code": "G20201",
+          "small_name": "타이어 소매업"
+        }
+      ],
+      "rows": 1766
+    },
+    {
+      "code": "G20202",
+      "taxonomy_name": "자동차 부품 소매업",
+      "snapshot_names": [
+        "자동차 부품 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G202",
+          "medium_name": "자동차 부품 소매",
+          "small_code": "G20202",
+          "small_name": "자동차 부품 소매업"
+        }
+      ],
+      "rows": 7702
+    },
+    {
+      "code": "G20301",
+      "taxonomy_name": "모터사이클 및 부품 소매업",
+      "snapshot_names": [
+        "모터사이클 및 부품 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G203",
+          "medium_name": "모터사이클 소매",
+          "small_code": "G20301",
+          "small_name": "모터사이클 및 부품 소매업"
+        }
+      ],
+      "rows": 2125
+    },
+    {
+      "code": "G20404",
+      "taxonomy_name": "슈퍼마켓",
+      "snapshot_names": [
+        "슈퍼마켓"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G204",
+          "medium_name": "종합 소매",
+          "small_code": "G20404",
+          "small_name": "슈퍼마켓"
+        }
+      ],
+      "rows": 63862
+    },
+    {
+      "code": "G20405",
+      "taxonomy_name": "편의점",
+      "snapshot_names": [
+        "편의점"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G204",
+          "medium_name": "종합 소매",
+          "small_code": "G20405",
+          "small_name": "편의점"
+        }
+      ],
+      "rows": 54446
+    },
+    {
+      "code": "G20499",
+      "taxonomy_name": "그 외 기타 종합 소매업",
+      "snapshot_names": [
+        "그 외 기타 종합 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G204",
+          "medium_name": "종합 소매",
+          "small_code": "G20499",
+          "small_name": "그 외 기타 종합 소매업"
+        }
+      ],
+      "rows": 6572
+    },
+    {
+      "code": "G20501",
+      "taxonomy_name": "곡물/곡분 소매업",
+      "snapshot_names": [
+        "곡물/곡분 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G205",
+          "medium_name": "식료품 소매",
+          "small_code": "G20501",
+          "small_name": "곡물/곡분 소매업"
+        }
+      ],
+      "rows": 2029
+    },
+    {
+      "code": "G20502",
+      "taxonomy_name": "가축 사료 소매업",
+      "snapshot_names": [
+        "가축 사료 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G205",
+          "medium_name": "식료품 소매",
+          "small_code": "G20502",
+          "small_name": "가축 사료 소매업"
+        }
+      ],
+      "rows": 895
+    },
+    {
+      "code": "G20503",
+      "taxonomy_name": "정육점",
+      "snapshot_names": [
+        "정육점"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G205",
+          "medium_name": "식료품 소매",
+          "small_code": "G20503",
+          "small_name": "정육점"
+        }
+      ],
+      "rows": 17852
+    },
+    {
+      "code": "G20504",
+      "taxonomy_name": "건어물/젓갈 소매업",
+      "snapshot_names": [
+        "건어물/젓갈 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G205",
+          "medium_name": "식료품 소매",
+          "small_code": "G20504",
+          "small_name": "건어물/젓갈 소매업"
+        }
+      ],
+      "rows": 5204
+    },
+    {
+      "code": "G20505",
+      "taxonomy_name": "수산물 소매업",
+      "snapshot_names": [
+        "수산물 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G205",
+          "medium_name": "식료품 소매",
+          "small_code": "G20505",
+          "small_name": "수산물 소매업"
+        }
+      ],
+      "rows": 9011
+    },
+    {
+      "code": "G20506",
+      "taxonomy_name": "채소/과일 소매업",
+      "snapshot_names": [
+        "채소/과일 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G205",
+          "medium_name": "식료품 소매",
+          "small_code": "G20506",
+          "small_name": "채소/과일 소매업"
+        }
+      ],
+      "rows": 19065
+    },
+    {
+      "code": "G20507",
+      "taxonomy_name": "아이스크림 할인점",
+      "snapshot_names": [
+        "아이스크림 할인점"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G205",
+          "medium_name": "식료품 소매",
+          "small_code": "G20507",
+          "small_name": "아이스크림 할인점"
+        }
+      ],
+      "rows": 237
+    },
+    {
+      "code": "G20508",
+      "taxonomy_name": "건강보조식품 소매업",
+      "snapshot_names": [
+        "건강보조식품 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G205",
+          "medium_name": "식료품 소매",
+          "small_code": "G20508",
+          "small_name": "건강보조식품 소매업"
+        }
+      ],
+      "rows": 15842
+    },
+    {
+      "code": "G20509",
+      "taxonomy_name": "반찬/식료품 소매업",
+      "snapshot_names": [
+        "반찬/식료품 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G205",
+          "medium_name": "식료품 소매",
+          "small_code": "G20509",
+          "small_name": "반찬/식료품 소매업"
+        }
+      ],
+      "rows": 15005
+    },
+    {
+      "code": "G20601",
+      "taxonomy_name": "얼음 소매업",
+      "snapshot_names": [
+        "얼음 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G206",
+          "medium_name": "음료 소매",
+          "small_code": "G20601",
+          "small_name": "얼음 소매업"
+        }
+      ],
+      "rows": 155
+    },
+    {
+      "code": "G20602",
+      "taxonomy_name": "주류 소매업",
+      "snapshot_names": [
+        "주류 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G206",
+          "medium_name": "음료 소매",
+          "small_code": "G20602",
+          "small_name": "주류 소매업"
+        }
+      ],
+      "rows": 982
+    },
+    {
+      "code": "G20603",
+      "taxonomy_name": "생수/음료 소매업",
+      "snapshot_names": [
+        "생수/음료 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G206",
+          "medium_name": "음료 소매",
+          "small_code": "G20603",
+          "small_name": "생수/음료 소매업"
+        }
+      ],
+      "rows": 1403
+    },
+    {
+      "code": "G20604",
+      "taxonomy_name": "우유 소매업",
+      "snapshot_names": [
+        "우유 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G206",
+          "medium_name": "음료 소매",
+          "small_code": "G20604",
+          "small_name": "우유 소매업"
+        }
+      ],
+      "rows": 482
+    },
+    {
+      "code": "G20701",
+      "taxonomy_name": "담배/전자담배 소매업",
+      "snapshot_names": [
+        "담배/전자담배 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G207",
+          "medium_name": "담배 소매",
+          "small_code": "G20701",
+          "small_name": "담배/전자담배 소매업"
+        }
+      ],
+      "rows": 4185
+    },
+    {
+      "code": "G20801",
+      "taxonomy_name": "컴퓨터/소프트웨어 소매업",
+      "snapshot_names": [
+        "컴퓨터/소프트웨어 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G208",
+          "medium_name": "가전·통신 소매",
+          "small_code": "G20801",
+          "small_name": "컴퓨터/소프트웨어 소매업"
+        }
+      ],
+      "rows": 6059
+    },
+    {
+      "code": "G20802",
+      "taxonomy_name": "핸드폰 소매업",
+      "snapshot_names": [
+        "핸드폰 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G208",
+          "medium_name": "가전·통신 소매",
+          "small_code": "G20802",
+          "small_name": "핸드폰 소매업"
+        }
+      ],
+      "rows": 21807
+    },
+    {
+      "code": "G20803",
+      "taxonomy_name": "가전제품 소매업",
+      "snapshot_names": [
+        "가전제품 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G208",
+          "medium_name": "가전·통신 소매",
+          "small_code": "G20803",
+          "small_name": "가전제품 소매업"
+        }
+      ],
+      "rows": 8161
+    },
+    {
+      "code": "G20901",
+      "taxonomy_name": "남성 의류 소매업",
+      "snapshot_names": [
+        "남성 의류 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G209",
+          "medium_name": "섬유·의복·신발 소매",
+          "small_code": "G20901",
+          "small_name": "남성 의류 소매업"
+        }
+      ],
+      "rows": 8107
+    },
+    {
+      "code": "G20902",
+      "taxonomy_name": "여성 의류 소매업",
+      "snapshot_names": [
+        "여성 의류 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G209",
+          "medium_name": "섬유·의복·신발 소매",
+          "small_code": "G20902",
+          "small_name": "여성 의류 소매업"
+        }
+      ],
+      "rows": 34010
+    },
+    {
+      "code": "G20903",
+      "taxonomy_name": "유아용 의류 소매업",
+      "snapshot_names": [
+        "유아용 의류 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G209",
+          "medium_name": "섬유·의복·신발 소매",
+          "small_code": "G20903",
+          "small_name": "유아용 의류 소매업"
+        }
+      ],
+      "rows": 4391
+    },
+    {
+      "code": "G20904",
+      "taxonomy_name": "한복 소매업",
+      "snapshot_names": [
+        "한복 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G209",
+          "medium_name": "섬유·의복·신발 소매",
+          "small_code": "G20904",
+          "small_name": "한복 소매업"
+        }
+      ],
+      "rows": 1095
+    },
+    {
+      "code": "G20905",
+      "taxonomy_name": "기타 의류 소매업",
+      "snapshot_names": [
+        "기타 의류 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G209",
+          "medium_name": "섬유·의복·신발 소매",
+          "small_code": "G20905",
+          "small_name": "기타 의류 소매업"
+        }
+      ],
+      "rows": 51513
+    },
+    {
+      "code": "G20906",
+      "taxonomy_name": "침구류/커튼 소매업",
+      "snapshot_names": [
+        "침구류/커튼 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G209",
+          "medium_name": "섬유·의복·신발 소매",
+          "small_code": "G20906",
+          "small_name": "침구류/커튼 소매업"
+        }
+      ],
+      "rows": 8720
+    },
+    {
+      "code": "G20907",
+      "taxonomy_name": "액세서리/잡화 소매업",
+      "snapshot_names": [
+        "액세서리/잡화 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G209",
+          "medium_name": "섬유·의복·신발 소매",
+          "small_code": "G20907",
+          "small_name": "액세서리/잡화 소매업"
+        }
+      ],
+      "rows": 6322
+    },
+    {
+      "code": "G20908",
+      "taxonomy_name": "가발 소매업",
+      "snapshot_names": [
+        "가발 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G209",
+          "medium_name": "섬유·의복·신발 소매",
+          "small_code": "G20908",
+          "small_name": "가발 소매업"
+        }
+      ],
+      "rows": 766
+    },
+    {
+      "code": "G20909",
+      "taxonomy_name": "실/섬유제품 소매업",
+      "snapshot_names": [
+        "실/섬유제품 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G209",
+          "medium_name": "섬유·의복·신발 소매",
+          "small_code": "G20909",
+          "small_name": "실/섬유제품 소매업"
+        }
+      ],
+      "rows": 3217
+    },
+    {
+      "code": "G20910",
+      "taxonomy_name": "신발 소매업",
+      "snapshot_names": [
+        "신발 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G209",
+          "medium_name": "섬유·의복·신발 소매",
+          "small_code": "G20910",
+          "small_name": "신발 소매업"
+        }
+      ],
+      "rows": 7822
+    },
+    {
+      "code": "G20911",
+      "taxonomy_name": "가방 소매업",
+      "snapshot_names": [
+        "가방 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G209",
+          "medium_name": "섬유·의복·신발 소매",
+          "small_code": "G20911",
+          "small_name": "가방 소매업"
+        }
+      ],
+      "rows": 3999
+    },
+    {
+      "code": "G21001",
+      "taxonomy_name": "철물/공구 소매업",
+      "snapshot_names": [
+        "철물/공구 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G210",
+          "medium_name": "철물·건설자재 소매",
+          "small_code": "G21001",
+          "small_name": "철물/공구 소매업"
+        }
+      ],
+      "rows": 15279
+    },
+    {
+      "code": "G21002",
+      "taxonomy_name": "벽지/장판/마루 소매업",
+      "snapshot_names": [
+        "벽지/장판/마루 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G210",
+          "medium_name": "철물·건설자재 소매",
+          "small_code": "G21002",
+          "small_name": "벽지/장판/마루 소매업"
+        }
+      ],
+      "rows": 5575
+    },
+    {
+      "code": "G21003",
+      "taxonomy_name": "건설/건축자재 소매업",
+      "snapshot_names": [
+        "건설/건축자재 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G210",
+          "medium_name": "철물·건설자재 소매",
+          "small_code": "G21003",
+          "small_name": "건설/건축자재 소매업"
+        }
+      ],
+      "rows": 1363
+    },
+    {
+      "code": "G21099",
+      "taxonomy_name": "기타 건설/건축자재 소매업",
+      "snapshot_names": [
+        "기타 건설/건축자재 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G210",
+          "medium_name": "철물·건설자재 소매",
+          "small_code": "G21099",
+          "small_name": "기타 건설/건축자재 소매업"
+        }
+      ],
+      "rows": 2016
+    },
+    {
+      "code": "G21101",
+      "taxonomy_name": "가구 소매업",
+      "snapshot_names": [
+        "가구 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G211",
+          "medium_name": "가구 소매",
+          "small_code": "G21101",
+          "small_name": "가구 소매업"
+        }
+      ],
+      "rows": 9862
+    },
+    {
+      "code": "G21201",
+      "taxonomy_name": "전기용품/조명장치 소매업",
+      "snapshot_names": [
+        "전기용품/조명장치 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G212",
+          "medium_name": "기타 생활용품 소매",
+          "small_code": "G21201",
+          "small_name": "전기용품/조명장치 소매업"
+        }
+      ],
+      "rows": 6061
+    },
+    {
+      "code": "G21202",
+      "taxonomy_name": "주방/가정용품 소매업",
+      "snapshot_names": [
+        "주방/가정용품 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G212",
+          "medium_name": "기타 생활용품 소매",
+          "small_code": "G21202",
+          "small_name": "주방/가정용품 소매업"
+        }
+      ],
+      "rows": 10822
+    },
+    {
+      "code": "G21203",
+      "taxonomy_name": "악기 소매업",
+      "snapshot_names": [
+        "악기 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G212",
+          "medium_name": "기타 생활용품 소매",
+          "small_code": "G21203",
+          "small_name": "악기 소매업"
+        }
+      ],
+      "rows": 1535
+    },
+    {
+      "code": "G21301",
+      "taxonomy_name": "서점",
+      "snapshot_names": [
+        "서점"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G213",
+          "medium_name": "오락용품 소매",
+          "small_code": "G21301",
+          "small_name": "서점"
+        }
+      ],
+      "rows": 6762
+    },
+    {
+      "code": "G21302",
+      "taxonomy_name": "문구/회화용품 소매업",
+      "snapshot_names": [
+        "문구/회화용품 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G213",
+          "medium_name": "오락용품 소매",
+          "small_code": "G21302",
+          "small_name": "문구/회화용품 소매업"
+        }
+      ],
+      "rows": 8893
+    },
+    {
+      "code": "G21303",
+      "taxonomy_name": "음반/비디오물 소매업",
+      "snapshot_names": [
+        "음반/비디오물 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G213",
+          "medium_name": "오락용품 소매",
+          "small_code": "G21303",
+          "small_name": "음반/비디오물 소매업"
+        }
+      ],
+      "rows": 396
+    },
+    {
+      "code": "G21304",
+      "taxonomy_name": "운동용품 소매업",
+      "snapshot_names": [
+        "운동용품 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G213",
+          "medium_name": "오락용품 소매",
+          "small_code": "G21304",
+          "small_name": "운동용품 소매업"
+        }
+      ],
+      "rows": 11120
+    },
+    {
+      "code": "G21305",
+      "taxonomy_name": "자전거 소매업",
+      "snapshot_names": [
+        "자전거 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G213",
+          "medium_name": "오락용품 소매",
+          "small_code": "G21305",
+          "small_name": "자전거 소매업"
+        }
+      ],
+      "rows": 2817
+    },
+    {
+      "code": "G21306",
+      "taxonomy_name": "장난감 소매업",
+      "snapshot_names": [
+        "장난감 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G213",
+          "medium_name": "오락용품 소매",
+          "small_code": "G21306",
+          "small_name": "장난감 소매업"
+        }
+      ],
+      "rows": 5536
+    },
+    {
+      "code": "G21401",
+      "taxonomy_name": "주유소",
+      "snapshot_names": [
+        "주유소"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G214",
+          "medium_name": "연료 소매",
+          "small_code": "G21401",
+          "small_name": "주유소"
+        }
+      ],
+      "rows": 12551
+    },
+    {
+      "code": "G21402",
+      "taxonomy_name": "가스 충전소",
+      "snapshot_names": [
+        "가스 충전소"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G214",
+          "medium_name": "연료 소매",
+          "small_code": "G21402",
+          "small_name": "가스 충전소"
+        }
+      ],
+      "rows": 1809
+    },
+    {
+      "code": "G21403",
+      "taxonomy_name": "가정용 연료 소매업",
+      "snapshot_names": [
+        "가정용 연료 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G214",
+          "medium_name": "연료 소매",
+          "small_code": "G21403",
+          "small_name": "가정용 연료 소매업"
+        }
+      ],
+      "rows": 5523
+    },
+    {
+      "code": "G21501",
+      "taxonomy_name": "약국",
+      "snapshot_names": [
+        "약국"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G215",
+          "medium_name": "의약·화장품 소매",
+          "small_code": "G21501",
+          "small_name": "약국"
+        }
+      ],
+      "rows": 25072
+    },
+    {
+      "code": "G21502",
+      "taxonomy_name": "의료기기 소매업",
+      "snapshot_names": [
+        "의료기기 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G215",
+          "medium_name": "의약·화장품 소매",
+          "small_code": "G21502",
+          "small_name": "의료기기 소매업"
+        }
+      ],
+      "rows": 7542
+    },
+    {
+      "code": "G21503",
+      "taxonomy_name": "화장품 소매업",
+      "snapshot_names": [
+        "화장품 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G215",
+          "medium_name": "의약·화장품 소매",
+          "small_code": "G21503",
+          "small_name": "화장품 소매업"
+        }
+      ],
+      "rows": 27468
+    },
+    {
+      "code": "G21601",
+      "taxonomy_name": "사무기기 소매업",
+      "snapshot_names": [
+        "사무기기 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G216",
+          "medium_name": "안경·정밀기기 소매",
+          "small_code": "G21601",
+          "small_name": "사무기기 소매업"
+        }
+      ],
+      "rows": 1629
+    },
+    {
+      "code": "G21602",
+      "taxonomy_name": "안경렌즈 소매업",
+      "snapshot_names": [
+        "안경렌즈 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G216",
+          "medium_name": "안경·정밀기기 소매",
+          "small_code": "G21602",
+          "small_name": "안경렌즈 소매업"
+        }
+      ],
+      "rows": 9804
+    },
+    {
+      "code": "G21603",
+      "taxonomy_name": "사진기/기타 광학기기 소매업",
+      "snapshot_names": [
+        "사진기/기타 광학기기 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G216",
+          "medium_name": "안경·정밀기기 소매",
+          "small_code": "G21603",
+          "small_name": "사진기/기타 광학기기 소매업"
+        }
+      ],
+      "rows": 566
+    },
+    {
+      "code": "G21701",
+      "taxonomy_name": "시계/귀금속 소매업",
+      "snapshot_names": [
+        "시계/귀금속 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G217",
+          "medium_name": "시계·귀금속 소매",
+          "small_code": "G21701",
+          "small_name": "시계/귀금속 소매업"
+        }
+      ],
+      "rows": 10516
+    },
+    {
+      "code": "G21801",
+      "taxonomy_name": "예술품 소매업",
+      "snapshot_names": [
+        "예술품 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G218",
+          "medium_name": "장식품 소매",
+          "small_code": "G21801",
+          "small_name": "예술품 소매업"
+        }
+      ],
+      "rows": 6109
+    },
+    {
+      "code": "G21802",
+      "taxonomy_name": "기념품점",
+      "snapshot_names": [
+        "기념품점"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G218",
+          "medium_name": "장식품 소매",
+          "small_code": "G21802",
+          "small_name": "기념품점"
+        }
+      ],
+      "rows": 6034
+    },
+    {
+      "code": "G21901",
+      "taxonomy_name": "꽃집",
+      "snapshot_names": [
+        "꽃집"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G219",
+          "medium_name": "식물 소매",
+          "small_code": "G21901",
+          "small_name": "꽃집"
+        }
+      ],
+      "rows": 17769
+    },
+    {
+      "code": "G22001",
+      "taxonomy_name": "애완동물/애완용품 소매업",
+      "snapshot_names": [
+        "애완동물/애완용품 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G220",
+          "medium_name": "애완동물·용품 소매",
+          "small_code": "G22001",
+          "small_name": "애완동물/애완용품 소매업"
+        }
+      ],
+      "rows": 10309
+    },
+    {
+      "code": "G22199",
+      "taxonomy_name": "그 외 기타 상품 전문 소매업",
+      "snapshot_names": [
+        "그 외 기타 상품 전문 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G221",
+          "medium_name": "기타 상품 소매",
+          "small_code": "G22199",
+          "small_name": "그 외 기타 상품 전문 소매업"
+        }
+      ],
+      "rows": 12842
+    },
+    {
+      "code": "G22201",
+      "taxonomy_name": "중고 상품 소매업",
+      "snapshot_names": [
+        "중고 상품 소매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "G2",
+          "large_name": "소매",
+          "medium_code": "G222",
+          "medium_name": "중고 상품 소매",
+          "small_code": "G22201",
+          "small_name": "중고 상품 소매업"
+        }
+      ],
+      "rows": 9740
+    },
+    {
+      "code": "I10101",
+      "taxonomy_name": "호텔/리조트",
+      "snapshot_names": [
+        "호텔/리조트"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I1",
+          "large_name": "숙박",
+          "medium_code": "I101",
+          "medium_name": "일반 숙박",
+          "small_code": "I10101",
+          "small_name": "호텔/리조트"
+        }
+      ],
+      "rows": 2499
+    },
+    {
+      "code": "I10102",
+      "taxonomy_name": "여관/모텔",
+      "snapshot_names": [
+        "여관/모텔"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I1",
+          "large_name": "숙박",
+          "medium_code": "I101",
+          "medium_name": "일반 숙박",
+          "small_code": "I10102",
+          "small_name": "여관/모텔"
+        }
+      ],
+      "rows": 24140
+    },
+    {
+      "code": "I10103",
+      "taxonomy_name": "펜션",
+      "snapshot_names": [
+        "펜션"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I1",
+          "large_name": "숙박",
+          "medium_code": "I101",
+          "medium_name": "일반 숙박",
+          "small_code": "I10103",
+          "small_name": "펜션"
+        }
+      ],
+      "rows": 44806
+    },
+    {
+      "code": "I10104",
+      "taxonomy_name": "캠핑/글램핑",
+      "snapshot_names": [
+        "캠핑/글램핑"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I1",
+          "large_name": "숙박",
+          "medium_code": "I101",
+          "medium_name": "일반 숙박",
+          "small_code": "I10104",
+          "small_name": "캠핑/글램핑"
+        }
+      ],
+      "rows": 2616
+    },
+    {
+      "code": "I10201",
+      "taxonomy_name": "기숙사/고시원",
+      "snapshot_names": [
+        "기숙사/고시원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I1",
+          "large_name": "숙박",
+          "medium_code": "I102",
+          "medium_name": "기타 숙박",
+          "small_code": "I10201",
+          "small_name": "기숙사/고시원"
+        }
+      ],
+      "rows": 5829
+    },
+    {
+      "code": "I10299",
+      "taxonomy_name": "그 외 기타 숙박업",
+      "snapshot_names": [
+        "그 외 기타 숙박업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I1",
+          "large_name": "숙박",
+          "medium_code": "I102",
+          "medium_name": "기타 숙박",
+          "small_code": "I10299",
+          "small_name": "그 외 기타 숙박업"
+        }
+      ],
+      "rows": 593
+    },
+    {
+      "code": "I20101",
+      "taxonomy_name": "백반/한정식",
+      "snapshot_names": [
+        "백반/한정식"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I201",
+          "medium_name": "한식",
+          "small_code": "I20101",
+          "small_name": "백반/한정식"
+        }
+      ],
+      "rows": 180762
+    },
+    {
+      "code": "I20102",
+      "taxonomy_name": "국/탕/찌개류",
+      "snapshot_names": [
+        "국/탕/찌개류"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I201",
+          "medium_name": "한식",
+          "small_code": "I20102",
+          "small_name": "국/탕/찌개류"
+        }
+      ],
+      "rows": 31908
+    },
+    {
+      "code": "I20103",
+      "taxonomy_name": "족발/보쌈",
+      "snapshot_names": [
+        "족발/보쌈"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I201",
+          "medium_name": "한식",
+          "small_code": "I20103",
+          "small_name": "족발/보쌈"
+        }
+      ],
+      "rows": 7573
+    },
+    {
+      "code": "I20104",
+      "taxonomy_name": "전/부침개",
+      "snapshot_names": [
+        "전/부침개"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I201",
+          "medium_name": "한식",
+          "small_code": "I20104",
+          "small_name": "전/부침개"
+        }
+      ],
+      "rows": 914
+    },
+    {
+      "code": "I20105",
+      "taxonomy_name": "국수/칼국수",
+      "snapshot_names": [
+        "국수/칼국수"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I201",
+          "medium_name": "한식",
+          "small_code": "I20105",
+          "small_name": "국수/칼국수"
+        }
+      ],
+      "rows": 20442
+    },
+    {
+      "code": "I20106",
+      "taxonomy_name": "냉면/밀면",
+      "snapshot_names": [
+        "냉면/밀면"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I201",
+          "medium_name": "한식",
+          "small_code": "I20106",
+          "small_name": "냉면/밀면"
+        }
+      ],
+      "rows": 3883
+    },
+    {
+      "code": "I20107",
+      "taxonomy_name": "돼지고기 구이/찜",
+      "snapshot_names": [
+        "돼지고기 구이/찜"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I201",
+          "medium_name": "한식",
+          "small_code": "I20107",
+          "small_name": "돼지고기 구이/찜"
+        }
+      ],
+      "rows": 55328
+    },
+    {
+      "code": "I20108",
+      "taxonomy_name": "소고기 구이/찜",
+      "snapshot_names": [
+        "소고기 구이/찜"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I201",
+          "medium_name": "한식",
+          "small_code": "I20108",
+          "small_name": "소고기 구이/찜"
+        }
+      ],
+      "rows": 6184
+    },
+    {
+      "code": "I20109",
+      "taxonomy_name": "곱창 전골/구이",
+      "snapshot_names": [
+        "곱창 전골/구이"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I201",
+          "medium_name": "한식",
+          "small_code": "I20109",
+          "small_name": "곱창 전골/구이"
+        }
+      ],
+      "rows": 7194
+    },
+    {
+      "code": "I20110",
+      "taxonomy_name": "닭/오리고기 구이/찜",
+      "snapshot_names": [
+        "닭/오리고기 구이/찜"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I201",
+          "medium_name": "한식",
+          "small_code": "I20110",
+          "small_name": "닭/오리고기 구이/찜"
+        }
+      ],
+      "rows": 8622
+    },
+    {
+      "code": "I20111",
+      "taxonomy_name": "횟집",
+      "snapshot_names": [
+        "횟집"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I201",
+          "medium_name": "한식",
+          "small_code": "I20111",
+          "small_name": "횟집"
+        }
+      ],
+      "rows": 19385
+    },
+    {
+      "code": "I20112",
+      "taxonomy_name": "해산물 구이/찜",
+      "snapshot_names": [
+        "해산물 구이/찜"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I201",
+          "medium_name": "한식",
+          "small_code": "I20112",
+          "small_name": "해산물 구이/찜"
+        }
+      ],
+      "rows": 14561
+    },
+    {
+      "code": "I20113",
+      "taxonomy_name": "복 요리 전문",
+      "snapshot_names": [
+        "복 요리 전문"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I201",
+          "medium_name": "한식",
+          "small_code": "I20113",
+          "small_name": "복 요리 전문"
+        }
+      ],
+      "rows": 591
+    },
+    {
+      "code": "I20199",
+      "taxonomy_name": "기타 한식 음식점",
+      "snapshot_names": [
+        "기타 한식 음식점"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I201",
+          "medium_name": "한식",
+          "small_code": "I20199",
+          "small_name": "기타 한식 음식점"
+        }
+      ],
+      "rows": 2485
+    },
+    {
+      "code": "I20201",
+      "taxonomy_name": "중국집",
+      "snapshot_names": [
+        "중국집"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I202",
+          "medium_name": "중식",
+          "small_code": "I20201",
+          "small_name": "중국집"
+        }
+      ],
+      "rows": 27615
+    },
+    {
+      "code": "I20202",
+      "taxonomy_name": "마라탕/훠궈",
+      "snapshot_names": [
+        "마라탕/훠궈"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I202",
+          "medium_name": "중식",
+          "small_code": "I20202",
+          "small_name": "마라탕/훠궈"
+        }
+      ],
+      "rows": 4369
+    },
+    {
+      "code": "I20301",
+      "taxonomy_name": "일식 회/초밥",
+      "snapshot_names": [
+        "일식 회/초밥"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I203",
+          "medium_name": "일식",
+          "small_code": "I20301",
+          "small_name": "일식 회/초밥"
+        }
+      ],
+      "rows": 19499
+    },
+    {
+      "code": "I20302",
+      "taxonomy_name": "일식 카레/돈가스/덮밥",
+      "snapshot_names": [
+        "일식 카레/돈가스/덮밥"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I203",
+          "medium_name": "일식",
+          "small_code": "I20302",
+          "small_name": "일식 카레/돈가스/덮밥"
+        }
+      ],
+      "rows": 2539
+    },
+    {
+      "code": "I20303",
+      "taxonomy_name": "일식 면 요리",
+      "snapshot_names": [
+        "일식 면 요리"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I203",
+          "medium_name": "일식",
+          "small_code": "I20303",
+          "small_name": "일식 면 요리"
+        }
+      ],
+      "rows": 2292
+    },
+    {
+      "code": "I20399",
+      "taxonomy_name": "기타 일식 음식점",
+      "snapshot_names": [
+        "기타 일식 음식점"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I203",
+          "medium_name": "일식",
+          "small_code": "I20399",
+          "small_name": "기타 일식 음식점"
+        }
+      ],
+      "rows": 512
+    },
+    {
+      "code": "I20401",
+      "taxonomy_name": "경양식",
+      "snapshot_names": [
+        "경양식"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I204",
+          "medium_name": "서양식",
+          "small_code": "I20401",
+          "small_name": "경양식"
+        }
+      ],
+      "rows": 19598
+    },
+    {
+      "code": "I20402",
+      "taxonomy_name": "파스타/스테이크",
+      "snapshot_names": [
+        "파스타/스테이크"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I204",
+          "medium_name": "서양식",
+          "small_code": "I20402",
+          "small_name": "파스타/스테이크"
+        }
+      ],
+      "rows": 2041
+    },
+    {
+      "code": "I20403",
+      "taxonomy_name": "패밀리레스토랑",
+      "snapshot_names": [
+        "패밀리레스토랑"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I204",
+          "medium_name": "서양식",
+          "small_code": "I20403",
+          "small_name": "패밀리레스토랑"
+        }
+      ],
+      "rows": 410
+    },
+    {
+      "code": "I20499",
+      "taxonomy_name": "기타 서양식 음식점",
+      "snapshot_names": [
+        "기타 서양식 음식점"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I204",
+          "medium_name": "서양식",
+          "small_code": "I20499",
+          "small_name": "기타 서양식 음식점"
+        }
+      ],
+      "rows": 1051
+    },
+    {
+      "code": "I20501",
+      "taxonomy_name": "베트남식 전문",
+      "snapshot_names": [
+        "베트남식 전문"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I205",
+          "medium_name": "동남아시아",
+          "small_code": "I20501",
+          "small_name": "베트남식 전문"
+        }
+      ],
+      "rows": 6094
+    },
+    {
+      "code": "I20599",
+      "taxonomy_name": "기타 동남아식 전문",
+      "snapshot_names": [
+        "기타 동남아식 전문"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I205",
+          "medium_name": "동남아시아",
+          "small_code": "I20599",
+          "small_name": "기타 동남아식 전문"
+        }
+      ],
+      "rows": 537
+    },
+    {
+      "code": "I20601",
+      "taxonomy_name": "분류 안된 외국식 음식점",
+      "snapshot_names": [
+        "분류 안된 외국식 음식점"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I206",
+          "medium_name": "기타 외국",
+          "small_code": "I20601",
+          "small_name": "분류 안된 외국식 음식점"
+        }
+      ],
+      "rows": 49
+    },
+    {
+      "code": "I20701",
+      "taxonomy_name": "구내식당",
+      "snapshot_names": [
+        "구내식당"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I207",
+          "medium_name": "구내식당·뷔페",
+          "small_code": "I20701",
+          "small_name": "구내식당"
+        }
+      ],
+      "rows": 7489
+    },
+    {
+      "code": "I20702",
+      "taxonomy_name": "뷔페",
+      "snapshot_names": [
+        "뷔페"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I207",
+          "medium_name": "구내식당·뷔페",
+          "small_code": "I20702",
+          "small_name": "뷔페"
+        }
+      ],
+      "rows": 3184
+    },
+    {
+      "code": "I21001",
+      "taxonomy_name": "빵/도넛",
+      "snapshot_names": [
+        "빵/도넛"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I210",
+          "medium_name": "기타 간이",
+          "small_code": "I21001",
+          "small_name": "빵/도넛"
+        }
+      ],
+      "rows": 31168
+    },
+    {
+      "code": "I21002",
+      "taxonomy_name": "떡/한과",
+      "snapshot_names": [
+        "떡/한과"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I210",
+          "medium_name": "기타 간이",
+          "small_code": "I21002",
+          "small_name": "떡/한과"
+        }
+      ],
+      "rows": 9418
+    },
+    {
+      "code": "I21003",
+      "taxonomy_name": "피자",
+      "snapshot_names": [
+        "피자"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I210",
+          "medium_name": "기타 간이",
+          "small_code": "I21003",
+          "small_name": "피자"
+        }
+      ],
+      "rows": 17509
+    },
+    {
+      "code": "I21004",
+      "taxonomy_name": "버거",
+      "snapshot_names": [
+        "버거"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I210",
+          "medium_name": "기타 간이",
+          "small_code": "I21004",
+          "small_name": "버거"
+        }
+      ],
+      "rows": 5749
+    },
+    {
+      "code": "I21005",
+      "taxonomy_name": "토스트/샌드위치/샐러드",
+      "snapshot_names": [
+        "토스트/샌드위치/샐러드"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I210",
+          "medium_name": "기타 간이",
+          "small_code": "I21005",
+          "small_name": "토스트/샌드위치/샐러드"
+        }
+      ],
+      "rows": 3407
+    },
+    {
+      "code": "I21006",
+      "taxonomy_name": "치킨",
+      "snapshot_names": [
+        "치킨"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I210",
+          "medium_name": "기타 간이",
+          "small_code": "I21006",
+          "small_name": "치킨"
+        }
+      ],
+      "rows": 40315
+    },
+    {
+      "code": "I21007",
+      "taxonomy_name": "김밥/만두/분식",
+      "snapshot_names": [
+        "김밥/만두/분식"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I210",
+          "medium_name": "기타 간이",
+          "small_code": "I21007",
+          "small_name": "김밥/만두/분식"
+        }
+      ],
+      "rows": 44410
+    },
+    {
+      "code": "I21008",
+      "taxonomy_name": "아이스크림/빙수",
+      "snapshot_names": [
+        "아이스크림/빙수"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I210",
+          "medium_name": "기타 간이",
+          "small_code": "I21008",
+          "small_name": "아이스크림/빙수"
+        }
+      ],
+      "rows": 2821
+    },
+    {
+      "code": "I21099",
+      "taxonomy_name": "그 외 기타 간이 음식점",
+      "snapshot_names": [
+        "그 외 기타 간이 음식점"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I210",
+          "medium_name": "기타 간이",
+          "small_code": "I21099",
+          "small_name": "그 외 기타 간이 음식점"
+        }
+      ],
+      "rows": 8144
+    },
+    {
+      "code": "I21101",
+      "taxonomy_name": "일반 유흥 주점",
+      "snapshot_names": [
+        "일반 유흥 주점"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I211",
+          "medium_name": "주점",
+          "small_code": "I21101",
+          "small_name": "일반 유흥 주점"
+        }
+      ],
+      "rows": 25375
+    },
+    {
+      "code": "I21102",
+      "taxonomy_name": "무도 유흥 주점",
+      "snapshot_names": [
+        "무도 유흥 주점"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I211",
+          "medium_name": "주점",
+          "small_code": "I21102",
+          "small_name": "무도 유흥 주점"
+        }
+      ],
+      "rows": 978
+    },
+    {
+      "code": "I21103",
+      "taxonomy_name": "생맥주 전문",
+      "snapshot_names": [
+        "생맥주 전문"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I211",
+          "medium_name": "주점",
+          "small_code": "I21103",
+          "small_name": "생맥주 전문"
+        }
+      ],
+      "rows": 15149
+    },
+    {
+      "code": "I21104",
+      "taxonomy_name": "요리 주점",
+      "snapshot_names": [
+        "요리 주점"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I211",
+          "medium_name": "주점",
+          "small_code": "I21104",
+          "small_name": "요리 주점"
+        }
+      ],
+      "rows": 56078
+    },
+    {
+      "code": "I21201",
+      "taxonomy_name": "카페",
+      "snapshot_names": [
+        "카페"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "I2",
+          "large_name": "음식",
+          "medium_code": "I212",
+          "medium_name": "비알코올",
+          "small_code": "I21201",
+          "small_name": "카페"
+        }
+      ],
+      "rows": 122623
+    },
+    {
+      "code": "L10203",
+      "taxonomy_name": "부동산 중개/대리업",
+      "snapshot_names": [
+        "부동산 중개/대리업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "L1",
+          "large_name": "부동산",
+          "medium_code": "L102",
+          "medium_name": "부동산 서비스",
+          "small_code": "L10203",
+          "small_name": "부동산 중개/대리업"
+        }
+      ],
+      "rows": 105445
+    },
+    {
+      "code": "M10301",
+      "taxonomy_name": "변호사",
+      "snapshot_names": [
+        "변호사"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M103",
+          "medium_name": "법무관련",
+          "small_code": "M10301",
+          "small_name": "변호사"
+        }
+      ],
+      "rows": 9287
+    },
+    {
+      "code": "M10302",
+      "taxonomy_name": "변리사",
+      "snapshot_names": [
+        "변리사"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M103",
+          "medium_name": "법무관련",
+          "small_code": "M10302",
+          "small_name": "변리사"
+        }
+      ],
+      "rows": 1241
+    },
+    {
+      "code": "M10303",
+      "taxonomy_name": "법무사",
+      "snapshot_names": [
+        "법무사"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M103",
+          "medium_name": "법무관련",
+          "small_code": "M10303",
+          "small_name": "법무사"
+        }
+      ],
+      "rows": 7275
+    },
+    {
+      "code": "M10306",
+      "taxonomy_name": "행정사",
+      "snapshot_names": [
+        "행정사"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M103",
+          "medium_name": "법무관련",
+          "small_code": "M10306",
+          "small_name": "행정사"
+        }
+      ],
+      "rows": 4339
+    },
+    {
+      "code": "M10307",
+      "taxonomy_name": "공인노무사",
+      "snapshot_names": [
+        "공인노무사"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M103",
+          "medium_name": "법무관련",
+          "small_code": "M10307",
+          "small_name": "공인노무사"
+        }
+      ],
+      "rows": 1701
+    },
+    {
+      "code": "M10399",
+      "taxonomy_name": "기타 법무관련 서비스업",
+      "snapshot_names": [
+        "기타 법무관련 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M103",
+          "medium_name": "법무관련",
+          "small_code": "M10399",
+          "small_name": "기타 법무관련 서비스업"
+        }
+      ],
+      "rows": 439
+    },
+    {
+      "code": "M10401",
+      "taxonomy_name": "공인회계사",
+      "snapshot_names": [
+        "공인회계사"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M104",
+          "medium_name": "회계·세무",
+          "small_code": "M10401",
+          "small_name": "공인회계사"
+        }
+      ],
+      "rows": 1836
+    },
+    {
+      "code": "M10402",
+      "taxonomy_name": "세무사",
+      "snapshot_names": [
+        "세무사"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M104",
+          "medium_name": "회계·세무",
+          "small_code": "M10402",
+          "small_name": "세무사"
+        }
+      ],
+      "rows": 14983
+    },
+    {
+      "code": "M10499",
+      "taxonomy_name": "기타 회계 관련 서비스업",
+      "snapshot_names": [
+        "기타 회계 관련 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M104",
+          "medium_name": "회계·세무",
+          "small_code": "M10499",
+          "small_name": "기타 회계 관련 서비스업"
+        }
+      ],
+      "rows": 70
+    },
+    {
+      "code": "M10501",
+      "taxonomy_name": "광고 대행업",
+      "snapshot_names": [
+        "광고 대행업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M105",
+          "medium_name": "광고",
+          "small_code": "M10501",
+          "small_name": "광고 대행업"
+        }
+      ],
+      "rows": 33608
+    },
+    {
+      "code": "M10502",
+      "taxonomy_name": "옥외/전시 광고 대행업",
+      "snapshot_names": [
+        "옥외/전시 광고 대행업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M105",
+          "medium_name": "광고",
+          "small_code": "M10502",
+          "small_name": "옥외/전시 광고 대행업"
+        }
+      ],
+      "rows": 1765
+    },
+    {
+      "code": "M10503",
+      "taxonomy_name": "광고 매체 판매업",
+      "snapshot_names": [
+        "광고 매체 판매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M105",
+          "medium_name": "광고",
+          "small_code": "M10503",
+          "small_name": "광고 매체 판매업"
+        }
+      ],
+      "rows": 559
+    },
+    {
+      "code": "M10504",
+      "taxonomy_name": "광고물 설계/제작업",
+      "snapshot_names": [
+        "광고물 설계/제작업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M105",
+          "medium_name": "광고",
+          "small_code": "M10504",
+          "small_name": "광고물 설계/제작업"
+        }
+      ],
+      "rows": 7576
+    },
+    {
+      "code": "M10599",
+      "taxonomy_name": "기타 광고 관련 서비스업",
+      "snapshot_names": [
+        "기타 광고 관련 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M105",
+          "medium_name": "광고",
+          "small_code": "M10599",
+          "small_name": "기타 광고 관련 서비스업"
+        }
+      ],
+      "rows": 1987
+    },
+    {
+      "code": "M10601",
+      "taxonomy_name": "시장 조사 및 여론 조사업",
+      "snapshot_names": [
+        "시장 조사 및 여론 조사업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M106",
+          "medium_name": "시장 조사",
+          "small_code": "M10601",
+          "small_name": "시장 조사 및 여론 조사업"
+        }
+      ],
+      "rows": 1471
+    },
+    {
+      "code": "M10703",
+      "taxonomy_name": "경영 컨설팅업",
+      "snapshot_names": [
+        "경영 컨설팅업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M107",
+          "medium_name": "본사·경영 컨설팅",
+          "small_code": "M10703",
+          "small_name": "경영 컨설팅업"
+        }
+      ],
+      "rows": 64026
+    },
+    {
+      "code": "M10901",
+      "taxonomy_name": "건축 설계 및 관련 서비스업",
+      "snapshot_names": [
+        "건축 설계 및 관련 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M109",
+          "medium_name": "기술 서비스",
+          "small_code": "M10901",
+          "small_name": "건축 설계 및 관련 서비스업"
+        }
+      ],
+      "rows": 21245
+    },
+    {
+      "code": "M10902",
+      "taxonomy_name": "도시 계획 및 조경 설계 서비스업",
+      "snapshot_names": [
+        "도시 계획 및 조경 설계 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M109",
+          "medium_name": "기술 서비스",
+          "small_code": "M10902",
+          "small_name": "도시 계획 및 조경 설계 서비스업"
+        }
+      ],
+      "rows": 1988
+    },
+    {
+      "code": "M10903",
+      "taxonomy_name": "건물 및 토목 엔지니어링 서비스업",
+      "snapshot_names": [
+        "건물 및 토목 엔지니어링 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M109",
+          "medium_name": "기술 서비스",
+          "small_code": "M10903",
+          "small_name": "건물 및 토목 엔지니어링 서비스업"
+        }
+      ],
+      "rows": 7797
+    },
+    {
+      "code": "M10904",
+      "taxonomy_name": "환경 관련 엔지니어링 서비스업",
+      "snapshot_names": [
+        "환경 관련 엔지니어링 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M109",
+          "medium_name": "기술 서비스",
+          "small_code": "M10904",
+          "small_name": "환경 관련 엔지니어링 서비스업"
+        }
+      ],
+      "rows": 2396
+    },
+    {
+      "code": "M10999",
+      "taxonomy_name": "기타 엔지니어링 서비스업",
+      "snapshot_names": [
+        "기타 엔지니어링 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M109",
+          "medium_name": "기술 서비스",
+          "small_code": "M10999",
+          "small_name": "기타 엔지니어링 서비스업"
+        }
+      ],
+      "rows": 11977
+    },
+    {
+      "code": "M11101",
+      "taxonomy_name": "동물병원",
+      "snapshot_names": [
+        "동물병원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M111",
+          "medium_name": "수의",
+          "small_code": "M11101",
+          "small_name": "동물병원"
+        }
+      ],
+      "rows": 4662
+    },
+    {
+      "code": "M11201",
+      "taxonomy_name": "인테리어 디자인업",
+      "snapshot_names": [
+        "인테리어 디자인업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M112",
+          "medium_name": "전문 디자인",
+          "small_code": "M11201",
+          "small_name": "인테리어 디자인업"
+        }
+      ],
+      "rows": 24155
+    },
+    {
+      "code": "M11202",
+      "taxonomy_name": "제품 디자인업",
+      "snapshot_names": [
+        "제품 디자인업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M112",
+          "medium_name": "전문 디자인",
+          "small_code": "M11202",
+          "small_name": "제품 디자인업"
+        }
+      ],
+      "rows": 5045
+    },
+    {
+      "code": "M11203",
+      "taxonomy_name": "시각 디자인업",
+      "snapshot_names": [
+        "시각 디자인업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M112",
+          "medium_name": "전문 디자인",
+          "small_code": "M11203",
+          "small_name": "시각 디자인업"
+        }
+      ],
+      "rows": 15615
+    },
+    {
+      "code": "M11204",
+      "taxonomy_name": "패션/섬유/기타 전문 디자인업",
+      "snapshot_names": [
+        "패션/섬유/기타 전문 디자인업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M112",
+          "medium_name": "전문 디자인",
+          "small_code": "M11204",
+          "small_name": "패션/섬유/기타 전문 디자인업"
+        }
+      ],
+      "rows": 2853
+    },
+    {
+      "code": "M11301",
+      "taxonomy_name": "사진촬영업",
+      "snapshot_names": [
+        "사진촬영업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M113",
+          "medium_name": "사진 촬영",
+          "small_code": "M11301",
+          "small_name": "사진촬영업"
+        }
+      ],
+      "rows": 20483
+    },
+    {
+      "code": "M11401",
+      "taxonomy_name": "명함/간판/광고물 제작",
+      "snapshot_names": [
+        "명함/간판/광고물 제작"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M114",
+          "medium_name": "인쇄·제품제작",
+          "small_code": "M11401",
+          "small_name": "명함/간판/광고물 제작"
+        }
+      ],
+      "rows": 17694
+    },
+    {
+      "code": "M11502",
+      "taxonomy_name": "번역/통역 서비스업",
+      "snapshot_names": [
+        "번역/통역 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M115",
+          "medium_name": "기타 전문 과학",
+          "small_code": "M11502",
+          "small_name": "번역/통역 서비스업"
+        }
+      ],
+      "rows": 2413
+    },
+    {
+      "code": "M11504",
+      "taxonomy_name": "사업/무형 재산권 중개업",
+      "snapshot_names": [
+        "사업/무형 재산권 중개업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "M1",
+          "large_name": "과학·기술",
+          "medium_code": "M115",
+          "medium_name": "기타 전문 과학",
+          "small_code": "M11504",
+          "small_name": "사업/무형 재산권 중개업"
+        }
+      ],
+      "rows": 2651
+    },
+    {
+      "code": "N10101",
+      "taxonomy_name": "사업시설 유지·관리 서비스업",
+      "snapshot_names": [
+        "사업시설 유지·관리 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N101",
+          "medium_name": "시설관리",
+          "small_code": "N10101",
+          "small_name": "사업시설 유지·관리 서비스업"
+        }
+      ],
+      "rows": 7761
+    },
+    {
+      "code": "N10201",
+      "taxonomy_name": "건축물 일반 청소업",
+      "snapshot_names": [
+        "건축물 일반 청소업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N102",
+          "medium_name": "청소·방제",
+          "small_code": "N10201",
+          "small_name": "건축물 일반 청소업"
+        }
+      ],
+      "rows": 23541
+    },
+    {
+      "code": "N10202",
+      "taxonomy_name": "산업설비; 운송장비 및 공공장소 청소업",
+      "snapshot_names": [
+        "산업설비; 운송장비 및 공공장소 청소업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N102",
+          "medium_name": "청소·방제",
+          "small_code": "N10202",
+          "small_name": "산업설비; 운송장비 및 공공장소 청소업"
+        }
+      ],
+      "rows": 3599
+    },
+    {
+      "code": "N10203",
+      "taxonomy_name": "소독; 구충 및 방제 서비스업",
+      "snapshot_names": [
+        "소독; 구충 및 방제 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N102",
+          "medium_name": "청소·방제",
+          "small_code": "N10203",
+          "small_name": "소독; 구충 및 방제 서비스업"
+        }
+      ],
+      "rows": 4470
+    },
+    {
+      "code": "N10301",
+      "taxonomy_name": "조경 유지·관리 서비스업",
+      "snapshot_names": [
+        "조경 유지·관리 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N103",
+          "medium_name": "조경·유지",
+          "small_code": "N10301",
+          "small_name": "조경 유지·관리 서비스업"
+        }
+      ],
+      "rows": 1874
+    },
+    {
+      "code": "N10401",
+      "taxonomy_name": "고용 알선업",
+      "snapshot_names": [
+        "고용 알선업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N104",
+          "medium_name": "고용 알선",
+          "small_code": "N10401",
+          "small_name": "고용 알선업"
+        }
+      ],
+      "rows": 10751
+    },
+    {
+      "code": "N10402",
+      "taxonomy_name": "임시/일용 인력 공급업",
+      "snapshot_names": [
+        "임시/일용 인력 공급업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N104",
+          "medium_name": "고용 알선",
+          "small_code": "N10402",
+          "small_name": "임시/일용 인력 공급업"
+        }
+      ],
+      "rows": 6757
+    },
+    {
+      "code": "N10403",
+      "taxonomy_name": "상용 인력 공급 및 인사관리 서비스업",
+      "snapshot_names": [
+        "상용 인력 공급 및 인사관리 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N104",
+          "medium_name": "고용 알선",
+          "small_code": "N10403",
+          "small_name": "상용 인력 공급 및 인사관리 서비스업"
+        }
+      ],
+      "rows": 2224
+    },
+    {
+      "code": "N10501",
+      "taxonomy_name": "여행사",
+      "snapshot_names": [
+        "여행사"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N105",
+          "medium_name": "여행사·보조",
+          "small_code": "N10501",
+          "small_name": "여행사"
+        }
+      ],
+      "rows": 13917
+    },
+    {
+      "code": "N10599",
+      "taxonomy_name": "기타 여행 보조/예약 서비스업",
+      "snapshot_names": [
+        "기타 여행 보조/예약 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N105",
+          "medium_name": "여행사·보조",
+          "small_code": "N10599",
+          "small_name": "기타 여행 보조/예약 서비스업"
+        }
+      ],
+      "rows": 1652
+    },
+    {
+      "code": "N10703",
+      "taxonomy_name": "복사업",
+      "snapshot_names": [
+        "복사업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N107",
+          "medium_name": "사무 지원",
+          "small_code": "N10703",
+          "small_name": "복사업"
+        }
+      ],
+      "rows": 2065
+    },
+    {
+      "code": "N10799",
+      "taxonomy_name": "기타 사무 지원 서비스업",
+      "snapshot_names": [
+        "기타 사무 지원 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N107",
+          "medium_name": "사무 지원",
+          "small_code": "N10799",
+          "small_name": "기타 사무 지원 서비스업"
+        }
+      ],
+      "rows": 1749
+    },
+    {
+      "code": "N10802",
+      "taxonomy_name": "전시/컨벤션/행사 대행 서비스업",
+      "snapshot_names": [
+        "전시/컨벤션/행사 대행 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N108",
+          "medium_name": "기타 사업 서비스",
+          "small_code": "N10802",
+          "small_name": "전시/컨벤션/행사 대행 서비스업"
+        }
+      ],
+      "rows": 13093
+    },
+    {
+      "code": "N10805",
+      "taxonomy_name": "포장/충전업",
+      "snapshot_names": [
+        "포장/충전업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N108",
+          "medium_name": "기타 사업 서비스",
+          "small_code": "N10805",
+          "small_name": "포장/충전업"
+        }
+      ],
+      "rows": 2979
+    },
+    {
+      "code": "N10901",
+      "taxonomy_name": "자동차 대여업",
+      "snapshot_names": [
+        "자동차 대여업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N109",
+          "medium_name": "운송장비 대여",
+          "small_code": "N10901",
+          "small_name": "자동차 대여업"
+        }
+      ],
+      "rows": 3647
+    },
+    {
+      "code": "N10999",
+      "taxonomy_name": "기타 운송장비 대여업",
+      "snapshot_names": [
+        "기타 운송장비 대여업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N109",
+          "medium_name": "운송장비 대여",
+          "small_code": "N10999",
+          "small_name": "기타 운송장비 대여업"
+        }
+      ],
+      "rows": 1549
+    },
+    {
+      "code": "N11001",
+      "taxonomy_name": "스포츠/레크리에이션 용품 대여업",
+      "snapshot_names": [
+        "스포츠/레크리에이션 용품 대여업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N110",
+          "medium_name": "가정용품 대여",
+          "small_code": "N11001",
+          "small_name": "스포츠/레크리에이션 용품 대여업"
+        }
+      ],
+      "rows": 2324
+    },
+    {
+      "code": "N11002",
+      "taxonomy_name": "음반/비디오물 대여업",
+      "snapshot_names": [
+        "음반/비디오물 대여업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N110",
+          "medium_name": "가정용품 대여",
+          "small_code": "N11002",
+          "small_name": "음반/비디오물 대여업"
+        }
+      ],
+      "rows": 89
+    },
+    {
+      "code": "N11003",
+      "taxonomy_name": "만화방",
+      "snapshot_names": [
+        "만화방"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N110",
+          "medium_name": "가정용품 대여",
+          "small_code": "N11003",
+          "small_name": "만화방"
+        }
+      ],
+      "rows": 645
+    },
+    {
+      "code": "N11004",
+      "taxonomy_name": "의류 대여업",
+      "snapshot_names": [
+        "의류 대여업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N110",
+          "medium_name": "가정용품 대여",
+          "small_code": "N11004",
+          "small_name": "의류 대여업"
+        }
+      ],
+      "rows": 2040
+    },
+    {
+      "code": "N11099",
+      "taxonomy_name": "기타 개인/가정용품 대여업",
+      "snapshot_names": [
+        "기타 개인/가정용품 대여업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N110",
+          "medium_name": "가정용품 대여",
+          "small_code": "N11099",
+          "small_name": "기타 개인/가정용품 대여업"
+        }
+      ],
+      "rows": 4084
+    },
+    {
+      "code": "N11101",
+      "taxonomy_name": "건설기계/장비 대여업",
+      "snapshot_names": [
+        "건설기계/장비 대여업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N111",
+          "medium_name": "산업용품 대여",
+          "small_code": "N11101",
+          "small_name": "건설기계/장비 대여업"
+        }
+      ],
+      "rows": 3160
+    },
+    {
+      "code": "N11102",
+      "taxonomy_name": "컴퓨터/사무기기 대여업",
+      "snapshot_names": [
+        "컴퓨터/사무기기 대여업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N111",
+          "medium_name": "산업용품 대여",
+          "small_code": "N11102",
+          "small_name": "컴퓨터/사무기기 대여업"
+        }
+      ],
+      "rows": 2280
+    },
+    {
+      "code": "N11199",
+      "taxonomy_name": "기타 산업용 기계/장비 대여업",
+      "snapshot_names": [
+        "기타 산업용 기계/장비 대여업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "N1",
+          "large_name": "시설관리·임대",
+          "medium_code": "N111",
+          "medium_name": "산업용품 대여",
+          "small_code": "N11199",
+          "small_name": "기타 산업용 기계/장비 대여업"
+        }
+      ],
+      "rows": 3705
+    },
+    {
+      "code": "P10501",
+      "taxonomy_name": "입시·교과학원",
+      "snapshot_names": [
+        "입시·교과학원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P105",
+          "medium_name": "일반 교육",
+          "small_code": "P10501",
+          "small_name": "입시·교과학원"
+        }
+      ],
+      "rows": 63767
+    },
+    {
+      "code": "P10601",
+      "taxonomy_name": "태권도/무술학원",
+      "snapshot_names": [
+        "태권도/무술학원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10601",
+          "small_name": "태권도/무술학원"
+        }
+      ],
+      "rows": 11802
+    },
+    {
+      "code": "P10603",
+      "taxonomy_name": "요가/필라테스 학원",
+      "snapshot_names": [
+        "요가/필라테스 학원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10603",
+          "small_name": "요가/필라테스 학원"
+        }
+      ],
+      "rows": 21718
+    },
+    {
+      "code": "P10605",
+      "taxonomy_name": "레크리에이션 교육기관",
+      "snapshot_names": [
+        "레크리에이션 교육기관"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10605",
+          "small_name": "레크리에이션 교육기관"
+        }
+      ],
+      "rows": 4770
+    },
+    {
+      "code": "P10607",
+      "taxonomy_name": "청소년 수련시설",
+      "snapshot_names": [
+        "청소년 수련시설"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10607",
+          "small_name": "청소년 수련시설"
+        }
+      ],
+      "rows": 791
+    },
+    {
+      "code": "P10609",
+      "taxonomy_name": "음악학원",
+      "snapshot_names": [
+        "음악학원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10609",
+          "small_name": "음악학원"
+        }
+      ],
+      "rows": 15877
+    },
+    {
+      "code": "P10611",
+      "taxonomy_name": "미술학원",
+      "snapshot_names": [
+        "미술학원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10611",
+          "small_name": "미술학원"
+        }
+      ],
+      "rows": 9322
+    },
+    {
+      "code": "P10613",
+      "taxonomy_name": "기타 예술/스포츠 교육기관",
+      "snapshot_names": [
+        "기타 예술/스포츠 교육기관"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10613",
+          "small_name": "기타 예술/스포츠 교육기관"
+        }
+      ],
+      "rows": 4903
+    },
+    {
+      "code": "P10615",
+      "taxonomy_name": "외국어학원",
+      "snapshot_names": [
+        "외국어학원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10615",
+          "small_name": "외국어학원"
+        }
+      ],
+      "rows": 5485
+    },
+    {
+      "code": "P10617",
+      "taxonomy_name": "전문자격/고시학원",
+      "snapshot_names": [
+        "전문자격/고시학원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10617",
+          "small_name": "전문자격/고시학원"
+        }
+      ],
+      "rows": 547
+    },
+    {
+      "code": "P10619",
+      "taxonomy_name": "사회교육시설",
+      "snapshot_names": [
+        "사회교육시설"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10619",
+          "small_name": "사회교육시설"
+        }
+      ],
+      "rows": 794
+    },
+    {
+      "code": "P10621",
+      "taxonomy_name": "직원 훈련기관",
+      "snapshot_names": [
+        "직원 훈련기관"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10621",
+          "small_name": "직원 훈련기관"
+        }
+      ],
+      "rows": 2559
+    },
+    {
+      "code": "P10623",
+      "taxonomy_name": "운전학원",
+      "snapshot_names": [
+        "운전학원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10623",
+          "small_name": "운전학원"
+        }
+      ],
+      "rows": 725
+    },
+    {
+      "code": "P10625",
+      "taxonomy_name": "기타 기술/직업 훈련학원",
+      "snapshot_names": [
+        "기타 기술/직업 훈련학원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10625",
+          "small_name": "기타 기술/직업 훈련학원"
+        }
+      ],
+      "rows": 15005
+    },
+    {
+      "code": "P10627",
+      "taxonomy_name": "컴퓨터 학원",
+      "snapshot_names": [
+        "컴퓨터 학원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10627",
+          "small_name": "컴퓨터 학원"
+        }
+      ],
+      "rows": 1074
+    },
+    {
+      "code": "P10629",
+      "taxonomy_name": "그 외 기타 교육기관",
+      "snapshot_names": [
+        "그 외 기타 교육기관"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P106",
+          "medium_name": "기타 교육",
+          "small_code": "P10629",
+          "small_name": "그 외 기타 교육기관"
+        }
+      ],
+      "rows": 7503
+    },
+    {
+      "code": "P10701",
+      "taxonomy_name": "교육컨설팅업",
+      "snapshot_names": [
+        "교육컨설팅업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P107",
+          "medium_name": "교육 지원",
+          "small_code": "P10701",
+          "small_name": "교육컨설팅업"
+        }
+      ],
+      "rows": 6001
+    },
+    {
+      "code": "P10799",
+      "taxonomy_name": "기타 교육지원 서비스업",
+      "snapshot_names": [
+        "기타 교육지원 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "P1",
+          "large_name": "교육",
+          "medium_code": "P107",
+          "medium_name": "교육 지원",
+          "small_code": "P10799",
+          "small_name": "기타 교육지원 서비스업"
+        }
+      ],
+      "rows": 9132
+    },
+    {
+      "code": "Q10101",
+      "taxonomy_name": "종합병원",
+      "snapshot_names": [
+        "종합병원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q101",
+          "medium_name": "병원",
+          "small_code": "Q10101",
+          "small_name": "종합병원"
+        }
+      ],
+      "rows": 388
+    },
+    {
+      "code": "Q10102",
+      "taxonomy_name": "일반병원",
+      "snapshot_names": [
+        "일반병원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q101",
+          "medium_name": "병원",
+          "small_code": "Q10102",
+          "small_name": "일반병원"
+        }
+      ],
+      "rows": 1169
+    },
+    {
+      "code": "Q10103",
+      "taxonomy_name": "치과병원",
+      "snapshot_names": [
+        "치과병원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q101",
+          "medium_name": "병원",
+          "small_code": "Q10103",
+          "small_name": "치과병원"
+        }
+      ],
+      "rows": 392
+    },
+    {
+      "code": "Q10104",
+      "taxonomy_name": "한방병원",
+      "snapshot_names": [
+        "한방병원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q101",
+          "medium_name": "병원",
+          "small_code": "Q10104",
+          "small_name": "한방병원"
+        }
+      ],
+      "rows": 546
+    },
+    {
+      "code": "Q10105",
+      "taxonomy_name": "요양병원",
+      "snapshot_names": [
+        "요양병원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q101",
+          "medium_name": "병원",
+          "small_code": "Q10105",
+          "small_name": "요양병원"
+        }
+      ],
+      "rows": 1398
+    },
+    {
+      "code": "Q10201",
+      "taxonomy_name": "내과/소아과 의원",
+      "snapshot_names": [
+        "내과/소아과 의원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q102",
+          "medium_name": "의원",
+          "small_code": "Q10201",
+          "small_name": "내과/소아과 의원"
+        }
+      ],
+      "rows": 7912
+    },
+    {
+      "code": "Q10202",
+      "taxonomy_name": "외과 의원",
+      "snapshot_names": [
+        "외과 의원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q102",
+          "medium_name": "의원",
+          "small_code": "Q10202",
+          "small_name": "외과 의원"
+        }
+      ],
+      "rows": 3952
+    },
+    {
+      "code": "Q10203",
+      "taxonomy_name": "신경/정신과 의원",
+      "snapshot_names": [
+        "신경/정신과 의원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q102",
+          "medium_name": "의원",
+          "small_code": "Q10203",
+          "small_name": "신경/정신과 의원"
+        }
+      ],
+      "rows": 1611
+    },
+    {
+      "code": "Q10204",
+      "taxonomy_name": "피부/비뇨기과 의원",
+      "snapshot_names": [
+        "피부/비뇨기과 의원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q102",
+          "medium_name": "의원",
+          "small_code": "Q10204",
+          "small_name": "피부/비뇨기과 의원"
+        }
+      ],
+      "rows": 4862
+    },
+    {
+      "code": "Q10205",
+      "taxonomy_name": "안과 의원",
+      "snapshot_names": [
+        "안과 의원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q102",
+          "medium_name": "의원",
+          "small_code": "Q10205",
+          "small_name": "안과 의원"
+        }
+      ],
+      "rows": 1208
+    },
+    {
+      "code": "Q10206",
+      "taxonomy_name": "이비인후과 의원",
+      "snapshot_names": [
+        "이비인후과 의원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q102",
+          "medium_name": "의원",
+          "small_code": "Q10206",
+          "small_name": "이비인후과 의원"
+        }
+      ],
+      "rows": 1869
+    },
+    {
+      "code": "Q10207",
+      "taxonomy_name": "산부인과 의원",
+      "snapshot_names": [
+        "산부인과 의원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q102",
+          "medium_name": "의원",
+          "small_code": "Q10207",
+          "small_name": "산부인과 의원"
+        }
+      ],
+      "rows": 1321
+    },
+    {
+      "code": "Q10208",
+      "taxonomy_name": "성형외과 의원",
+      "snapshot_names": [
+        "성형외과 의원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q102",
+          "medium_name": "의원",
+          "small_code": "Q10208",
+          "small_name": "성형외과 의원"
+        }
+      ],
+      "rows": 1608
+    },
+    {
+      "code": "Q10209",
+      "taxonomy_name": "기타 의원",
+      "snapshot_names": [
+        "기타 의원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q102",
+          "medium_name": "의원",
+          "small_code": "Q10209",
+          "small_name": "기타 의원"
+        }
+      ],
+      "rows": 2575
+    },
+    {
+      "code": "Q10210",
+      "taxonomy_name": "치과의원",
+      "snapshot_names": [
+        "치과의원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q102",
+          "medium_name": "의원",
+          "small_code": "Q10210",
+          "small_name": "치과의원"
+        }
+      ],
+      "rows": 13394
+    },
+    {
+      "code": "Q10211",
+      "taxonomy_name": "한의원",
+      "snapshot_names": [
+        "한의원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q102",
+          "medium_name": "의원",
+          "small_code": "Q10211",
+          "small_name": "한의원"
+        }
+      ],
+      "rows": 9928
+    },
+    {
+      "code": "Q10212",
+      "taxonomy_name": "방사선 진단/병리 검사 의원",
+      "snapshot_names": [
+        "방사선 진단/병리 검사 의원"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q102",
+          "medium_name": "의원",
+          "small_code": "Q10212",
+          "small_name": "방사선 진단/병리 검사 의원"
+        }
+      ],
+      "rows": 319
+    },
+    {
+      "code": "Q10402",
+      "taxonomy_name": "유사 의료업",
+      "snapshot_names": [
+        "유사 의료업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "Q1",
+          "large_name": "보건의료",
+          "medium_code": "Q104",
+          "medium_name": "기타 보건",
+          "small_code": "Q10402",
+          "small_name": "유사 의료업"
+        }
+      ],
+      "rows": 3014
+    },
+    {
+      "code": "R10202",
+      "taxonomy_name": "독서실/스터디 카페",
+      "snapshot_names": [
+        "독서실/스터디 카페"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R102",
+          "medium_name": "도서관·사적지",
+          "small_code": "R10202",
+          "small_name": "독서실/스터디 카페"
+        }
+      ],
+      "rows": 10854
+    },
+    {
+      "code": "R10306",
+      "taxonomy_name": "종합 스포츠시설",
+      "snapshot_names": [
+        "종합 스포츠시설"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R103",
+          "medium_name": "스포츠 서비스",
+          "small_code": "R10306",
+          "small_name": "종합 스포츠시설"
+        }
+      ],
+      "rows": 666
+    },
+    {
+      "code": "R10307",
+      "taxonomy_name": "헬스장",
+      "snapshot_names": [
+        "헬스장"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R103",
+          "medium_name": "스포츠 서비스",
+          "small_code": "R10307",
+          "small_name": "헬스장"
+        }
+      ],
+      "rows": 14634
+    },
+    {
+      "code": "R10308",
+      "taxonomy_name": "수영장",
+      "snapshot_names": [
+        "수영장"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R103",
+          "medium_name": "스포츠 서비스",
+          "small_code": "R10308",
+          "small_name": "수영장"
+        }
+      ],
+      "rows": 555
+    },
+    {
+      "code": "R10309",
+      "taxonomy_name": "볼링장",
+      "snapshot_names": [
+        "볼링장"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R103",
+          "medium_name": "스포츠 서비스",
+          "small_code": "R10309",
+          "small_name": "볼링장"
+        }
+      ],
+      "rows": 1038
+    },
+    {
+      "code": "R10310",
+      "taxonomy_name": "당구장",
+      "snapshot_names": [
+        "당구장"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R103",
+          "medium_name": "스포츠 서비스",
+          "small_code": "R10310",
+          "small_name": "당구장"
+        }
+      ],
+      "rows": 12287
+    },
+    {
+      "code": "R10311",
+      "taxonomy_name": "골프 연습장",
+      "snapshot_names": [
+        "골프 연습장"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R103",
+          "medium_name": "스포츠 서비스",
+          "small_code": "R10311",
+          "small_name": "골프 연습장"
+        }
+      ],
+      "rows": 11768
+    },
+    {
+      "code": "R10312",
+      "taxonomy_name": "테니스장",
+      "snapshot_names": [
+        "테니스장"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R103",
+          "medium_name": "스포츠 서비스",
+          "small_code": "R10312",
+          "small_name": "테니스장"
+        }
+      ],
+      "rows": 3147
+    },
+    {
+      "code": "R10313",
+      "taxonomy_name": "탁구장",
+      "snapshot_names": [
+        "탁구장"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R103",
+          "medium_name": "스포츠 서비스",
+          "small_code": "R10313",
+          "small_name": "탁구장"
+        }
+      ],
+      "rows": 1855
+    },
+    {
+      "code": "R10314",
+      "taxonomy_name": "기타 스포츠시설 운영업",
+      "snapshot_names": [
+        "기타 스포츠시설 운영업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R103",
+          "medium_name": "스포츠 서비스",
+          "small_code": "R10314",
+          "small_name": "기타 스포츠시설 운영업"
+        }
+      ],
+      "rows": 2506
+    },
+    {
+      "code": "R10316",
+      "taxonomy_name": "스쿼시/라켓볼장",
+      "snapshot_names": [
+        "스쿼시/라켓볼장"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R103",
+          "medium_name": "스포츠 서비스",
+          "small_code": "R10316",
+          "small_name": "스쿼시/라켓볼장"
+        }
+      ],
+      "rows": 197
+    },
+    {
+      "code": "R10402",
+      "taxonomy_name": "비디오방",
+      "snapshot_names": [
+        "비디오방"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R104",
+          "medium_name": "유원지·오락",
+          "small_code": "R10402",
+          "small_name": "비디오방"
+        }
+      ],
+      "rows": 106
+    },
+    {
+      "code": "R10404",
+      "taxonomy_name": "전자 게임장",
+      "snapshot_names": [
+        "전자 게임장"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R104",
+          "medium_name": "유원지·오락",
+          "small_code": "R10404",
+          "small_name": "전자 게임장"
+        }
+      ],
+      "rows": 3105
+    },
+    {
+      "code": "R10405",
+      "taxonomy_name": "기타 오락장",
+      "snapshot_names": [
+        "기타 오락장"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R104",
+          "medium_name": "유원지·오락",
+          "small_code": "R10405",
+          "small_name": "기타 오락장"
+        }
+      ],
+      "rows": 5133
+    },
+    {
+      "code": "R10406",
+      "taxonomy_name": "PC방",
+      "snapshot_names": [
+        "PC방"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R104",
+          "medium_name": "유원지·오락",
+          "small_code": "R10406",
+          "small_name": "PC방"
+        }
+      ],
+      "rows": 7464
+    },
+    {
+      "code": "R10407",
+      "taxonomy_name": "노래방",
+      "snapshot_names": [
+        "노래방"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R104",
+          "medium_name": "유원지·오락",
+          "small_code": "R10407",
+          "small_name": "노래방"
+        }
+      ],
+      "rows": 26573
+    },
+    {
+      "code": "R10408",
+      "taxonomy_name": "낚시터 운영업",
+      "snapshot_names": [
+        "낚시터 운영업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R104",
+          "medium_name": "유원지·오락",
+          "small_code": "R10408",
+          "small_name": "낚시터 운영업"
+        }
+      ],
+      "rows": 565
+    },
+    {
+      "code": "R10409",
+      "taxonomy_name": "수상/해양 레저업",
+      "snapshot_names": [
+        "수상/해양 레저업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R104",
+          "medium_name": "유원지·오락",
+          "small_code": "R10409",
+          "small_name": "수상/해양 레저업"
+        }
+      ],
+      "rows": 1241
+    },
+    {
+      "code": "R10410",
+      "taxonomy_name": "복권 발행/판매업",
+      "snapshot_names": [
+        "복권 발행/판매업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R104",
+          "medium_name": "유원지·오락",
+          "small_code": "R10410",
+          "small_name": "복권 발행/판매업"
+        }
+      ],
+      "rows": 7271
+    },
+    {
+      "code": "R10414",
+      "taxonomy_name": "바둑/장기/체스 경기 운영업",
+      "snapshot_names": [
+        "바둑/장기/체스 경기 운영업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R104",
+          "medium_name": "유원지·오락",
+          "small_code": "R10414",
+          "small_name": "바둑/장기/체스 경기 운영업"
+        }
+      ],
+      "rows": 503
+    },
+    {
+      "code": "R10499",
+      "taxonomy_name": "기타 오락관련 서비스업",
+      "snapshot_names": [
+        "기타 오락관련 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "R1",
+          "large_name": "예술·스포츠",
+          "medium_code": "R104",
+          "medium_name": "유원지·오락",
+          "small_code": "R10499",
+          "small_name": "기타 오락관련 서비스업"
+        }
+      ],
+      "rows": 4544
+    },
+    {
+      "code": "S20101",
+      "taxonomy_name": "컴퓨터/노트북/프린터 수리업",
+      "snapshot_names": [
+        "컴퓨터/노트북/프린터 수리업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S201",
+          "medium_name": "컴퓨터 수리",
+          "small_code": "S20101",
+          "small_name": "컴퓨터/노트북/프린터 수리업"
+        }
+      ],
+      "rows": 7776
+    },
+    {
+      "code": "S20201",
+      "taxonomy_name": "핸드폰/통신장비 수리업",
+      "snapshot_names": [
+        "핸드폰/통신장비 수리업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S202",
+          "medium_name": "통신장비 수리",
+          "small_code": "S20201",
+          "small_name": "핸드폰/통신장비 수리업"
+        }
+      ],
+      "rows": 1620
+    },
+    {
+      "code": "S20301",
+      "taxonomy_name": "자동차 정비소",
+      "snapshot_names": [
+        "자동차 정비소"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S203",
+          "medium_name": "자동차 수리·세차",
+          "small_code": "S20301",
+          "small_name": "자동차 정비소"
+        }
+      ],
+      "rows": 38362
+    },
+    {
+      "code": "S20302",
+      "taxonomy_name": "자동차 세차장",
+      "snapshot_names": [
+        "자동차 세차장"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S203",
+          "medium_name": "자동차 수리·세차",
+          "small_code": "S20302",
+          "small_name": "자동차 세차장"
+        }
+      ],
+      "rows": 14318
+    },
+    {
+      "code": "S20401",
+      "taxonomy_name": "모터사이클 수리업",
+      "snapshot_names": [
+        "모터사이클 수리업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S204",
+          "medium_name": "모터사이클 수리",
+          "small_code": "S20401",
+          "small_name": "모터사이클 수리업"
+        }
+      ],
+      "rows": 3221
+    },
+    {
+      "code": "S20501",
+      "taxonomy_name": "가전제품 수리업",
+      "snapshot_names": [
+        "가전제품 수리업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S205",
+          "medium_name": "가전제품 수리",
+          "small_code": "S20501",
+          "small_name": "가전제품 수리업"
+        }
+      ],
+      "rows": 13368
+    },
+    {
+      "code": "S20601",
+      "taxonomy_name": "의류/이불 수선업",
+      "snapshot_names": [
+        "의류/이불 수선업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S206",
+          "medium_name": "기타 가정용품 수리",
+          "small_code": "S20601",
+          "small_name": "의류/이불 수선업"
+        }
+      ],
+      "rows": 6875
+    },
+    {
+      "code": "S20602",
+      "taxonomy_name": "가죽/가방/신발 수선업",
+      "snapshot_names": [
+        "가죽/가방/신발 수선업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S206",
+          "medium_name": "기타 가정용품 수리",
+          "small_code": "S20602",
+          "small_name": "가죽/가방/신발 수선업"
+        }
+      ],
+      "rows": 998
+    },
+    {
+      "code": "S20603",
+      "taxonomy_name": "시계/귀금속/악기 수리업",
+      "snapshot_names": [
+        "시계/귀금속/악기 수리업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S206",
+          "medium_name": "기타 가정용품 수리",
+          "small_code": "S20603",
+          "small_name": "시계/귀금속/악기 수리업"
+        }
+      ],
+      "rows": 516
+    },
+    {
+      "code": "S20699",
+      "taxonomy_name": "그 외 기타 개인/가정용품 수리업",
+      "snapshot_names": [
+        "그 외 기타 개인/가정용품 수리업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S206",
+          "medium_name": "기타 가정용품 수리",
+          "small_code": "S20699",
+          "small_name": "그 외 기타 개인/가정용품 수리업"
+        }
+      ],
+      "rows": 8375
+    },
+    {
+      "code": "S20701",
+      "taxonomy_name": "미용실",
+      "snapshot_names": [
+        "미용실"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S207",
+          "medium_name": "이용·미용",
+          "small_code": "S20701",
+          "small_name": "미용실"
+        }
+      ],
+      "rows": 120979
+    },
+    {
+      "code": "S20702",
+      "taxonomy_name": "피부 관리실",
+      "snapshot_names": [
+        "피부 관리실"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S207",
+          "medium_name": "이용·미용",
+          "small_code": "S20702",
+          "small_name": "피부 관리실"
+        }
+      ],
+      "rows": 36738
+    },
+    {
+      "code": "S20703",
+      "taxonomy_name": "네일숍",
+      "snapshot_names": [
+        "네일숍"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S207",
+          "medium_name": "이용·미용",
+          "small_code": "S20703",
+          "small_name": "네일숍"
+        }
+      ],
+      "rows": 27493
+    },
+    {
+      "code": "S20801",
+      "taxonomy_name": "목욕탕/사우나",
+      "snapshot_names": [
+        "목욕탕/사우나"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S208",
+          "medium_name": "욕탕·신체관리",
+          "small_code": "S20801",
+          "small_name": "목욕탕/사우나"
+        }
+      ],
+      "rows": 4910
+    },
+    {
+      "code": "S20802",
+      "taxonomy_name": "마사지/안마",
+      "snapshot_names": [
+        "마사지/안마"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S208",
+          "medium_name": "욕탕·신체관리",
+          "small_code": "S20802",
+          "small_name": "마사지/안마"
+        }
+      ],
+      "rows": 6085
+    },
+    {
+      "code": "S20803",
+      "taxonomy_name": "체형/비만 관리",
+      "snapshot_names": [
+        "체형/비만 관리"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S208",
+          "medium_name": "욕탕·신체관리",
+          "small_code": "S20803",
+          "small_name": "체형/비만 관리"
+        }
+      ],
+      "rows": 5491
+    },
+    {
+      "code": "S20901",
+      "taxonomy_name": "세탁소",
+      "snapshot_names": [
+        "세탁소"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S209",
+          "medium_name": "세탁",
+          "small_code": "S20901",
+          "small_name": "세탁소"
+        }
+      ],
+      "rows": 20146
+    },
+    {
+      "code": "S20902",
+      "taxonomy_name": "셀프 빨래방",
+      "snapshot_names": [
+        "셀프 빨래방"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S209",
+          "medium_name": "세탁",
+          "small_code": "S20902",
+          "small_name": "셀프 빨래방"
+        }
+      ],
+      "rows": 4990
+    },
+    {
+      "code": "S21001",
+      "taxonomy_name": "장례식장",
+      "snapshot_names": [
+        "장례식장"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S210",
+          "medium_name": "장례식장",
+          "small_code": "S21001",
+          "small_name": "장례식장"
+        }
+      ],
+      "rows": 3829
+    },
+    {
+      "code": "S21002",
+      "taxonomy_name": "화장터/묘지/납골당",
+      "snapshot_names": [
+        "화장터/묘지/납골당"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S210",
+          "medium_name": "장례식장",
+          "small_code": "S21002",
+          "small_name": "화장터/묘지/납골당"
+        }
+      ],
+      "rows": 1254
+    },
+    {
+      "code": "S21101",
+      "taxonomy_name": "예식장업",
+      "snapshot_names": [
+        "예식장업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S211",
+          "medium_name": "기타 개인",
+          "small_code": "S21101",
+          "small_name": "예식장업"
+        }
+      ],
+      "rows": 724
+    },
+    {
+      "code": "S21105",
+      "taxonomy_name": "결혼 상담 서비스업",
+      "snapshot_names": [
+        "결혼 상담 서비스업"
+      ],
+      "official_hierarchy": [
+        {
+          "large_code": "S2",
+          "large_name": "수리·개인",
+          "medium_code": "S211",
+          "medium_name": "기타 개인",
+          "small_code": "S21105",
+          "small_name": "결혼 상담 서비스업"
+        }
+      ],
+      "rows": 1759
+    }
+  ],
+  "snapshot_id": "semas-20260630-57aa36154410",
+  "snapshot_manifest": {
+    "source_url": "https://www.data.go.kr/data/15083033/fileData.do",
+    "dataset_name": "소상공인시장진흥공단_상가(상권)정보_20260630",
+    "source_as_of": "2026-06-30",
+    "downloaded_at": "2026-09-29T23:01:51.5247492Z",
+    "download_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003695831&fileDetailSn=1&dataNm=%EC%86%8C%EC%83%81%EA%B3%B5%EC%9D%B8%EC%8B%9C%EC%9E%A5%EC%A7%84%ED%9D%A5%EA%B3%B5%EB%8B%A8_%EC%83%81%EA%B0%80%28%EC%83%81%EA%B6%8C%29%EC%A0%95%EB%B3%B4_20260630",
+    "file_name": "semas_store_20260630.zip",
+    "bytes": 352699739,
+    "sha256": "57aa361544108ff4fc73334f87d2ced61e41fe8638dd70bcd842930f865d2386",
+    "zip_integrity": "passed",
+    "csv_member_count": 16,
+    "total_source_rows": 2772484,
+    "taxonomy_code_count": 247,
+    "observed_category_code_count": 247,
+    "zip_csv_entries": [
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_강원_202606.csv",
+        "uncompressed_bytes": 62582792,
+        "compressed_bytes": 13796695,
+        "rows": 110206
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_경기_202606.csv",
+        "uncompressed_bytes": 368502053,
+        "compressed_bytes": 90829183,
+        "rows": 672680
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_경남_202606.csv",
+        "uncompressed_bytes": 94792849,
+        "compressed_bytes": 21932933,
+        "rows": 172887
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_경북_202606.csv",
+        "uncompressed_bytes": 78004984,
+        "compressed_bytes": 18284375,
+        "rows": 144967
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_대구_202606.csv",
+        "uncompressed_bytes": 63309879,
+        "compressed_bytes": 14161290,
+        "rows": 118357
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_대전_202606.csv",
+        "uncompressed_bytes": 43012055,
+        "compressed_bytes": 9171705,
+        "rows": 80704
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_부산_202606.csv",
+        "uncompressed_bytes": 86867744,
+        "compressed_bytes": 19675560,
+        "rows": 159689
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_서울_202606.csv",
+        "uncompressed_bytes": 301889640,
+        "compressed_bytes": 71884065,
+        "rows": 554092
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_세종_202606.csv",
+        "uncompressed_bytes": 9912521,
+        "compressed_bytes": 1651758,
+        "rows": 15816
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_울산_202606.csv",
+        "uncompressed_bytes": 28962806,
+        "compressed_bytes": 6125049,
+        "rows": 54737
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_인천_202606.csv",
+        "uncompressed_bytes": 75353122,
+        "compressed_bytes": 16440504,
+        "rows": 136995
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_전남광주_202606.csv",
+        "uncompressed_bytes": 103015803,
+        "compressed_bytes": 22939340,
+        "rows": 175276
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_전북_202606.csv",
+        "uncompressed_bytes": 57408247,
+        "compressed_bytes": 12376936,
+        "rows": 98749
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_제주_202606.csv",
+        "uncompressed_bytes": 33597481,
+        "compressed_bytes": 6626123,
+        "rows": 59009
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_충남_202606.csv",
+        "uncompressed_bytes": 68319780,
+        "compressed_bytes": 15348491,
+        "rows": 124589
+      },
+      {
+        "member": "소상공인시장진흥공단_상가(상권)정보_충북_202606.csv",
+        "uncompressed_bytes": 52075833,
+        "compressed_bytes": 11448926,
+        "rows": 93731
+      }
+    ]
+  }
+}

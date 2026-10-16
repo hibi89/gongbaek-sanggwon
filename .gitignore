@@ -1,0 +1,42 @@
+# Credentials and local runtime
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.n8n/
+
+# Source databases and commercial/customer records
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+*.zip
+*.7z
+*.part[0-9][0-9][0-9]
+*.log
+*.tmp
+*.bak
+운영/30일_보관_삭제_대장.csv
+
+# Original bulk data / generated outputs
+/data/raw/*
+!/data/raw/manifest_20260630.json
+/data/processed/*
+!/data/processed/snapshot_validation_20260630.json
+/data/backups/
+/outputs/
+/tmp/
+/output/*
+!/output/samples/
+/output/samples/*
+!/output/samples/gap-271/
+/output/samples/gap-271/*

@@ -1,0 +1,21 @@
+{
+  "tested_date": "2026-09-30",
+  "test_type": "db_backed_local_http_smoke",
+  "python_runtime": "Codex bundled Python 3.12",
+  "listener": "127.0.0.1:8765",
+  "token_persisted": false,
+  "health_status": "ready",
+  "snapshot_id": "semas-20260630-57aa36154410",
+  "source_as_of": "2026-06-30",
+  "category_count": 247,
+  "unauthenticated_post_status": 401,
+  "authenticated_post_status": 200,
+  "analysis_status": "analysis_complete",
+  "overall_top20_count": 20,
+  "a_top10_count": 10,
+  "stores_within_5km": 60656,
+  "cumulative_counts_monotonic": true,
+  "publishable": false,
+  "publication_gate": "blocked_abc_owner_review",
+  "scope_note": "Uses saved sample coordinates; verifies the local HTTP service, not Kakao geocoding or an end-to-end n8n run."
+}

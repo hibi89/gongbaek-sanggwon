@@ -1,0 +1,7 @@
+{
+  "python": "3.12.14",
+  "node": "24.21.0",
+  "n8n": "2.40.7",
+  "python_lock": "requirements.lock",
+  "n8n_enforced_by": "scripts/start_n8n_with_retention.ps1"
+}
