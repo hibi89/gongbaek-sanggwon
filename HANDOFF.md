@@ -1,3 +1,13 @@
+## 2026-10-17 — 파일 전달 장애 우회 도구 구축 (Windows 현장 실행 대기)
+
+- 사용자가 “되게끔 만들어봐라”라고 요청하여 **Google Drive 직접 로컬 다운로드의 DNS 차단을 우회하는 Git 바이너리 전달기**를 신규 추가했다. 기존 n8n/DB/운영 코드 불변.
+- 신규 도구: `scripts/transfer_verified_kmong_asset.py`; 절차/비교: `운영/ChatGPT_Codex_파일전달_검증.md`.
+- 대상 ZIP: `판매자료/크몽_최종등록_20261017/KMONG_840642_FINAL_CORRECTED_247_20261017.zip`, 1,061,871바이트, SHA256 `13dafbac46b3ef7026bbac4b6bb9229183e7c49fda03640fb66425f07f5581cd`, Git blob SHA-1 `9e5ac1caa20676be27eaf7e59688f6bf8ecbeb33`.
+- Git CLI에서 `git fetch --no-tags origin main`으로 객체만 가져오고, Python subprocess bytes로 `git cat-file blob`을 읽어 ZIP 바이트를 왜곡 없이 확보. SHA256·CRC·manifest 14/14 PASS일 때만 `%LOCALAPPDATA%/GapAnalysis/verified_imports`에 안전하게 생성. 같은 파일 재사용 가능, 다른 내용 파일 덮어쓰기 거부.
+- **실험 PASS:** 격리된 Linux 환경에서 진짜 최종 ZIP을 Git 원격→clone/fetch→binary asset export, SHA256/CRC/manifest PASS; 동일 출력 재실행과 다른 파일 보호 테스트 PASS.
+- **현장 미검증:** 위 성공은 실험용 Git 리포지터리의 재현 시험이다. 사용자 Windows의 Codex 환경에서 Git 인증·fetch·파일 생성·해시를 확인해야 최종 end-to-end 완료. Google Drive `sediment://` → Codex Windows 파일 직행은 여전히 미완료(DNS 실패).
+- 코덱스에 사용자 다운로드/첨부를 다시 요구하지 말고 새 문서대로 실행하게 안내. `git pull`, `reset --hard`, 원본 코드 덮어쓰기, 실제 운영 서비스/크몽 변경 금지. 대용량·인증키·개인정보 GitHub 업로드 금지.
+
 ## 2026-10-17 — Google Drive ↔ Codex 파일 전달 실험
 
 - **실험 출처:** 사용자 전달 Codex 보고. Google Drive 연결에서 최종 ZIP `KMONG_840642_FINAL_CORRECTED_247_20261017.zip`의 메타데이터(1,061,871바이트) 조회 및 원본 파일 참조 `sediment://file_…` 생성 성공.
