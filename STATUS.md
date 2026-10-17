@@ -9,13 +9,13 @@
 | 원본 전국 SQLite·247 업종 | **완료(백업 및 Codex 로컬 검사)** | 2,772,484건, RTree 일치, taxonomy SHA 일치, `integrity_check=ok` |
 | Python 분석/검증 | **완료(시험 환경)** | 53/53, Linux font 런타임 보정 |
 | n8n publication gate 시험 | **완료(모의)** | 10/10, 실서비스 검증과 구분 |
-| PDF·XLSX 비식별 결과 | **완료(시험 환경)** | PDF 2페이지, XLSX 2시트·247개 업종 |
+| PDF·XLSX 비식별 결과 | **완료(2026-10-17 로컬 live E2E)** | execution 294에서 PDF 2페이지·XLSX 247개 고유 업종 검수, GitHub에는 업로드하지 않음 |
 | 가짜 주문 30일 삭제 | **완료(격리 시험)** | 실제 운영·고객 개인정보 삭제 미실행 |
-| Windows n8n·분석기 현행 기동 | **미확인 / 재가동 작업 중** | 가장 최근 전달 화면에서 5678·8765 중지, 토큰 파일 부재. 시점별 보고 불일치 |
-| Windows 신규 7노드 라이브 E2E | **대기** | 2026-10-01 과거 E2E 성공은 현재 정상 운영의 증거가 아님 |
+| Windows n8n·분석기 현행 기동 | **확인(2026-10-17)** | 기존 npm n8n 5678 /healthz 200, 분석기 8765 /health 200 ready; 서비스 재시작 없음 |
+| Windows 신규 7노드 라이브 E2E | **완료(2026-10-17)** | execution 294: 7노드, Kakao/분석기 200, gate passed, TOP20/A TOP10 및 출력 검수 완료 |
 | 크몽 49,000원 승인 대기 상품 | **현행 상태 직접 미검증** | Codex 사용자 보고 기준; 신규 등록·취소·변경 금지 |
 | 크몽 구매설득 자료 v2 | **완료(문서·ZIP 제작)** | `판매자료/크몽_구매가치_v2_20261017/` |
-| 크몽 실판매 준비 | **보류** | 운영 E2E·실제 상품 설정·수동 납품·정리 확인 필요 |
+| 크몽 실판매 준비 | **보류** | 공개주소 E2E 통과. 자동정리 유효값·고객 주문/개인정보 운영 절차 미검증 |
 
 ## 2. 최근 로컬 장애 핵심
 - 사용자/Codex 보고: n8n 기본 DB `C:\Users\haein\.n8n\database.sqlite`, WAL/SHM 백업 `E:\배달상권분석\배달상권분석\data\backups\n8n-snapshot-20261016_230909`; 복사본 WAL 반영 12건. 과거 288건은 `immutable=1`이 WAL 미반영한 결과. DB 다름/손상으로 오판 금지.
@@ -23,7 +23,7 @@
 - `scripts/start_n8n_with_retention.ps1`의 기본 자동정리 `true`/900시간에 주의. 원본 DB/WAL/SHM 보존, 자동정리 비활성화된 일회성 진단 검토. 운영 DB 갱신·정책 수정은 승인 없이 금지.
 - 분석기 `8765`는 시점에 따라 `ready`였거나 꺼져 있었음. 현행 상태와 새 토큰 연결·Kakao 인증은 반드시 새 로컬 증거로 판단.
 
-## 2026-10-17 11:47 KST — n8n 로그인/서버 최신 진단 (최신 결과, 과거 '서버 꺼짐' 보고보다 우선)
+## 2026-10-17 11:47 KST — n8n 로그인/서버 진단 (E2E 이전의 역사적 상태; 12:09 결과가 현재 상태를 대체)
 **증거 출처:** 사용자의 Chrome 스크린샷 및 같은 시점 Codex의 Windows 읽기 전용 확인 보고. GitHub만으로 로컬 PID/HTTP를 직접 확인한 것은 아님.
 
 - Chrome `http://localhost:5678/home/workflows`에서 **로그인된 기존 n8n 화면 접속 성공**, 목록 **13개** 보임. 화면에 `공백상권 분석 V1 - 247개 업종` 및 OHORA 워크플로가 표시됨.
@@ -35,6 +35,14 @@
 - 현재 프로세스는 `n8n.cmd start`로 실행됐음. `scripts/start_n8n_with_retention.ps1`에서 지정하던 `EXECUTIONS_DATA_PRUNE=true`/900시간이 **현재 프로세스에 적용됐는지는 미확인**. 직접 실행 명령만으로 환경변수 효과를 단정할 수 없음. **서비스를 재시작하지 말고 읽기 전용으로 프로세스 설정/기록 보관 여부를 조사**.
 - **다음 작업 1순위:** n8n 재설치·로그인 복구가 아니라 **분석기 8765 상태/토큰 유무 점검 → Kakao·Analyzer credential 실제 연결 검증 → 공개 주소 V1 7노드 E2E → PDF 2페이지·XLSX 247개 검수 → Analysis Input placeholder 복원**. E2E 전 완료·실판매 가능 단정 금지.
 - **추가 확인:** 앱 접속 성공과 워크플로 목록이 보이는 것은 서버/UI 접속 증거다. `Kakao` 200, 분석기 `/health` 200/ready, V1 gate PASS와 수동 CLI 납품은 **이번 진단에서 실행하지 않았음**.
+
+## 2026-10-17 12:09 KST — 기존 n8n 라이브 E2E 결과
+
+- 기존 n8n npm 인스턴스와 분석기를 사용했다. 5678 /healthz=200, 8765 /health=200 ready. Python 3.12.14, Node.js 24.21.0, n8n 2.40.7.
+- V1 ID EAaiz8X6dDyECVqg는 비활성 7노드. Kakao HTTP 200, 단일 좌표, 분석기 HTTP 200, 247개 업종, 미분류 0, TOP20 20행, A TOP10 10행, publication gate passed. 수동 execution 294는 success.
+- 결과물은 로컬에서 검수 완료: PDF 2페이지, XLSX 요약 + 전체 247개 시트/247개 고유 업종. manifest 파일 해시와 실제 파일 해시 일치. 주소·결과물·credential 정보는 GitHub에 올리지 않음.
+- Analysis Input 저장값은 placeholder로 복원, pinData 비어 있음, 기존 credential 10개 및 V1의 2개 참조 보존, 기존 실행기록 삭제 없음.
+- 제한: 현재 프로세스의 EXECUTIONS_DATA_PRUNE 유효 설정은 미확인. DB/WAL/SHM 백업 폴더에는 config가 없어 암호화 설정 백업은 미완료. 로컬 분석기·워크플로 파일 일부가 GitHub main 파일과 달라 재현성 조정이 남아 있음. 실제 고객 주문·개인정보 운영은 미검증.
 
 ## 3. 판매 자료 및 데이터
 - 분석 범위: 2026-06-30 전국 점포 2,772,484건, 247개 업종, 주소 1곳, 1~5km, TOP20/A TOP10, PDF+XLSX.

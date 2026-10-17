@@ -2,6 +2,20 @@
 
 > **시작 지점:** 이 문서를 먼저 읽고 `STATUS.md`, `AGENTS.md`, `REQUIREMENTS.md`, `설계/00_먼저_읽기.md` 및 최신 main HEAD/실제 파일을 확인한다. 과거 채팅 내용만으로 현재 기동 상태를 단정하지 말 것. 각 주요 작업 후 이 문서와 STATUS를 갱신한다.
 
+## 2026-10-17 12:09 KST — 기존 n8n 공백상권 V1 라이브 E2E 통과 (최신 상태)
+
+> 이 항목은 아래의 E2E 미실행·서비스 미확인 문구를 현재 상태에 대해 대체한다. 이전 진단 내용은 당시 기록으로 유지한다.
+
+- 기존 npm n8n을 그대로 사용했다. 새 인스턴스·계정 생성이나 서비스 재시작은 없었다. 5678의 n8n /healthz는 HTTP 200, Node.js 24.21.0, n8n 2.40.7이었다. 분석기 8765의 /health는 HTTP 200, ready, Python 3.12.14, 업종 247개, 기준일 2026-06-30, 점포/RTree 2,772,484건, RTree 무결성 ok, taxonomy 해시 일치였다.
+- 기존 V1 workflow ID EAaiz8X6dDyECVqg는 7노드·비활성이었다. 기존 credential 10개가 남아 있고 V1 참조 2개가 모두 resolve됐다. credential 값은 출력·수정하지 않았다.
+- 2026-10-17 공개 시설 주소 기반 수동 execution 294가 success로 끝났다. 7개 노드 모두 성공, Kakao HTTP 200 및 정확히 1개 좌표, 분석기 HTTP 200, 업종 247개·미분류 0, 전체 TOP20 20행, A TOP10 10행, publication_gate passed였다. 공개 시설 주소와 좌표는 이 저장소에 기록하지 않는다.
+- 기존 scripts/deliver_from_n8n_execution.py의 --check-only 검증 뒤 execution 294에서 로컬 PDF/XLSX를 생성했다. PDF는 2페이지, XLSX는 요약 및 전체 247개 시트, 업종 코드 247개 고유 행이었다. XLSX 요약 TOP20/A TOP10은 상세표와 일치했고 기준일·5km 합계·taxonomy가 실행 결과와 일치했다. manifest와 실제 PDF/XLSX SHA-256이 일치했다. 결과 파일은 로컬에만 두었고 GitHub에 올리지 않았다.
+- Analysis Input은 주소를 여기에 입력하세요로 저장 복원했고 pinData는 비어 있으며 V1은 비활성이다. 기존 실행기록은 삭제하지 않았다. 이전 WAL 포함 점검본 12건에서 현재 DB 13건으로 늘었고 #294는 success로 남아 있다.
+- 기존 n8n DB/WAL/SHM/config는 현재 사용자 폴더에 존재한다. 2026-10-16 snapshot 폴더에는 DB/WAL/SHM은 있으나 config 파일이 없어 암호화 설정 백업은 완전하지 않다. 해당 폴더를 변경하지 않았다.
+- 실행 중 n8n의 EXECUTIONS_DATA_PRUNE 유효값은 읽기 전용으로 확정하지 못했다. 설정 UI에도 해당 실행 보존 환경값이 노출되지 않았고 서비스를 재시작하지 않았다. 이번 실행 중 기존 기록 삭제는 관찰되지 않았으므로 자동 정리 정책이 꺼져 있다고 추론하지 말 것.
+- 로컬 작업 디렉터리의 scripts/analyze_gap.py, scripts/analyzer_service.py, 배달상권분석_공백상권_V1.json은 GitHub main 기준 파일과 해시가 달랐다. 이번 검증은 현재 로컬에서 동작 중인 기존 n8n/분석기 조합만 확인했으며, GitHub 소스가 동일하게 재현된다는 뜻은 아니다. 출시 전 소스 차이를 조정하고 검증할 것.
+- 실제 고객 주문·개인정보 처리·재방문 납품 리허설은 하지 않았다. 이번 결과만으로 크몽 실판매 준비 완료를 선언하지 않는다.
+
 ## 0. 프로젝트 및 기준점
 - GitHub **비공개** 저장소: https://github.com/hibi89/gongbaek-sanggwon ; 브랜치 `main`.
 - 확인된 소스 복원 커밋: `b906c74670bd27f0c15395f0f96b37fdf560ddbf`. 판매자료 보강의 2026-10-17 문서 점검 직전 HEAD: `b18bff7592ef21381735baa2b1cd31d32539c47d`. **작업할 때 최신 SHA는 GitHub에서 다시 확인**(이 문서 자체 수정 후 HEAD는 바뀜).
