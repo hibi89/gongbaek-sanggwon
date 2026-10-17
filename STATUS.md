@@ -1,3 +1,12 @@
+## 2026-10-17 — Google Drive ↔ Codex 파일 전달 실험
+
+- **실험 출처:** 사용자 전달 Codex 보고. Google Drive 연결에서 최종 ZIP `KMONG_840642_FINAL_CORRECTED_247_20261017.zip`의 메타데이터(1,061,871바이트) 조회 및 원본 파일 참조 `sediment://file_…` 생성 성공.
+- **실제 바이트 전달 실패:** Codex 작업환경이 임시 다운로드 호스트 `sdmntprkoreacentral.oaiusercontent.com`의 DNS를 조회하지 못함. 따라서 로컬 ZIP 파일 미생성, SHA-256/CRC/manifest 검증 미완료. 메타데이터 크기 일치만으로 ZIP 무결성 통과 판정 금지. 임시 URL/토큰 문서 기록 금지.
+- **GitHub 연결 도구의 바이너리 제한:** `main`의 ZIP 경로/Blob 존재를 조회했으나 connector 출력이 UTF-8 취급으로 제한되어 바이너리를 로컬 검증기로 전달하지 못함. **일반 로컬 Git CLI `git fetch`/원본 Git object 다운로드가 불가능함을 입증한 것은 아님.**
+- 사용자가 파일을 내려받아 재첨부하도록 반복 요구하지 말 것. 다음에 필요하면 기존 로컬 Git 저장소에서 **현재 변경 보존하며 `git fetch`와 Python `subprocess(..., stdout=PIPE)`로 바이너리 blob을 받아 SHA-256 검증**하는 별도 안전 실험을 제안. Windows PowerShell의 기본 리디렉션으로 바이너리 손상 가능성이 있어 바이너리 텍스트 재인코딩 금지.
+- 최종 ZIP 참조 SHA-256 `13dafbac46b3ef7026bbac4b6bb9229183e7c49fda03640fb66425f07f5581cd`; GitHub 경로 `판매자료/크몽_최종등록_20261017/KMONG_840642_FINAL_CORRECTED_247_20261017.zip`. 현재 공백상권 운영 n8n, DB, 크몽 등록 내용은 실험으로 변경되지 않음.
+- 전체 Drive→Codex 파일 이전 자동화는 **미완료**. 별도 접근 경로 검증 전까지 “코덱스가 Google Drive 대용량 데이터를 직접 사용할 수 있다”고 단정하지 말 것.
+
 ## 2026-10-17 — 크몽 심사 제출 사용자 보고
 
 - 사용자는 크몽 공백상권 상품에 대해 **"제출했어"**라고 보고했다. 이 대화에서는 크몽 실제 제출 화면·서비스 ID·심사 상태를 별도 독립 검증하지 않았다.
