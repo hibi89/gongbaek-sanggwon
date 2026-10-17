@@ -1,3 +1,12 @@
+## 2026-10-17 — 파일 전달기 .git 전제 제거 및 임시 clone 경로 검증
+
+- Codex 현장 실험에서 운영 폴더 `E:\배달상권분석\배달상권분석`에 `.git`이 없어 기존 도구가 실행 전 차단됐다. 이는 운영 폴더 Git 저장소 부재이지 GitHub ZIP 자체 문제로 볼 근거 없음. Windows에서 ZIP 원본 바이트·SHA/CRC는 이때 **미검증**.
+- ChatGPT가 `scripts/transfer_verified_kmong_asset.py`를 **.git 없는 폴더에서 작동**하도록 교체했다. 독립 OS 임시폴더 `git clone --no-checkout --depth 1` → 고정 Git blob raw bytes 추출 → 크기/SHA256/CRC/manifest 14/14 검증, 실패 시 `gh api` 원본 blob base64 경로 확인. 원래 운영 프로젝트를 Git 저장소로 초기화하거나 `git pull`하지 않음.
+- 검증된 새 Python 도구 Git Blob: `17759452ba9c7cbf603c5813687c4b51a78880d3` (원본 소스 8,213바이트). 작업 절차: `운영/ChatGPT_Codex_파일전달_검증.md`; GitHub 연결로 UTF-8 스크립트만 코덱스가 TEMP에 기록한 뒤 `python <TEMP script>`로 실행. 사용자 ZIP 다운로드/첨부 요청 금지.
+- **실제 테스트:** 격리 Linux에서 최종 ZIP으로 만든 임시 bare Git 원격을 .git 없는 디렉터리에서 clone → 실제 1,061,871 bytes, ZIP SHA256 `13dafbac46b3ef7026bbac4b6bb9229183e7c49fda03640fb66425f07f5581cd`, CRC PASS, manifest 14/14 PASS. 재실행 PASS, 기존 다른 파일 덮어쓰기 차단 PASS.
+- **남은 조건:** 사용자 Windows Codex 환경의 사설 GitHub `git clone`/GitHub CLI 네트워크·인증 성공 여부는 별도 실측 대기. GitHub 연결 토큰이 Windows Git CLI에 자동 제공된다고 가정하지 말 것. 양쪽 실패 시 오류 분류 후 안전한 다른 방법 제시; Windows 현장 완료를 주장하지 말 것.
+- 공백상권 운영 n8n/원본 SQLite/코드/크몽 #840642·#840848 미변경. GitHub 문서·신규 파일 수신 도구만 갱신.
+
 ## 2026-10-17 — 파일 전달 장애 우회 도구 구축 (Windows 현장 실행 대기)
 
 - 사용자가 “되게끔 만들어봐라”라고 요청하여 **Google Drive 직접 로컬 다운로드의 DNS 차단을 우회하는 Git 바이너리 전달기**를 신규 추가했다. 기존 n8n/DB/운영 코드 불변.
