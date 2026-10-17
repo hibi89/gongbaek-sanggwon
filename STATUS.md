@@ -1,3 +1,12 @@
+## 2026-10-17 16:25 KST — Codex Windows ZIP 자동 수신 성공 보고
+
+- **출처:** 사용자가 전달한 Windows Codex 실행 결과. 코덱스는 최신 GitHub main `d84977f87c50ddf6fc3da0b18a683c63b352beaf`와 `scripts/transfer_verified_kmong_asset.py` Git blob SHA-1 `17759452ba9c7cbf603c5813687c4b51a78880d3` 일치를 확인했다.
+- Codex가 Python 수신 스크립트를 Windows TEMP `C:\\Users\\haein\\AppData\\Local\\Temp\\transfer_verified_kmong_asset.py`에 직접 저장했고 Python 3.12.14로 실행했다. **독립 임시 Git clone으로 최종 ZIP 수신 성공**을 보고했으며 `gh` fallback은 실행할 필요가 없었다. 사용자 수동 ZIP 다운로드·첨부 없이 수행.
+- 이 Python 도구는 승인된 ZIP 바이트 크기(1,061,871), SHA-256(`13dafbac46b3ef7026bbac4b6bb9229183e7c49fda03640fb66425f07f5581cd`), ZIP CRC와 manifest 14/14를 검사한 후에만 `status=PASS`로 저장·종료하도록 구현됐다.
+- **증거 한계:** 사용자가 전달한 결과 본문에는 도구의 `status=PASS` JSON, 최종 `saved_to` 절대경로, Windows 파일의 실제 해시 출력은 포함되지 않았다. 따라서 별도 출력값 대조는 아직 미완료로 구분. 코덱스의 '수신 성공' 보고 자체는 기록.
+- 이번 성공은 **ChatGPT→비공개 GitHub→Codex Windows 파일 전달** 방법에 해당한다. **Google Drive→Codex Windows 직접 다운로드는 앞선 DNS 장애로 별도 미해결**. GitHub 비공개 저장소에 보관 가능한 비민감 소형 파일에만 이 경로를 사용한다.
+- 원본 운영 n8n/SQLite, 인증정보, 크몽 #840642/#840848는 파일 전달 시험으로 변경하지 않았다(코덱스 보고 기준). 추후 필요 시 코덱스에서 최종 JSON `status, method, saved_to, size, sha256, zip_crc, manifest`만 사용자에게 전달하면 확인이 완결된다.
+
 ## 2026-10-17 — 파일 전달기 .git 전제 제거 및 임시 clone 경로 검증
 
 - Codex 현장 실험에서 운영 폴더 `E:\배달상권분석\배달상권분석`에 `.git`이 없어 기존 도구가 실행 전 차단됐다. 이는 운영 폴더 Git 저장소 부재이지 GitHub ZIP 자체 문제로 볼 근거 없음. Windows에서 ZIP 원본 바이트·SHA/CRC는 이때 **미검증**.
