@@ -161,3 +161,58 @@
 
 - #840642 편집 화면의 기존 갤러리는 대표 1/4장, 상세 5/9장. 새 대표 1장·상세 6장으로 교체하려면 기존 이미지 자리를 정리해야 하며, 이전 이미지 항목을 제거하는 단계 전 사용자 확인을 받을 것.
 - 최종 ZIP의 대표 PNG는 1200×900, 상세 PNG 6장은 각 1200×1440으로 확인. 크몽 편집 화면의 대표 허용 형식 PNG/JPG 및 상세 폭 652~2000px·높이 3000px 이하 규격 범위에 들어감.
+
+
+## 2026-10-17 — 최종 운영 안정화·백업·모의 주문 결과
+
+### 현재 로컬 서비스와 V1
+- 기존 npm n8n은 종료·재시작하지 않았다. 작업 마무리 시 기존 127.0.0.1:5678/healthz는 status=ok, 분석기 127.0.0.1:8765/health는 ready였다. 분석기는 기준일 2026-06-30, 업종 247개, 점포/RTree 각 2,772,484건, taxonomy hash 일치, rtreecheck=ok를 반환했다.
+- V1 workflow ID EAaiz8X6dDyECVqg는 비활성 7노드. n8n snapshot 시 workflow 14개(활성 0), credential 행 10개, execution 14건, 최대 ID #295였다. credential 값은 출력·복호화·수정하지 않았다.
+- Analysis Input을 기본 안내 문구로 되돌리고 다시 열어 저장값을 확인했다. pinData를 설정하지 않았고 V1은 비활성이다.
+
+### 업데이트된 운영 백업
+- 기존 백업과 분리한 제한된 로컬 n8n snapshot을 #295 실행 이후 생성했다. SQLite Online Backup API를 읽기 전용 연결에 사용하여 커밋된 WAL 내용을 snapshot DB에 반영했다. 원본 DB/WAL/SHM은 변경하지 않았다.
+- snapshot DB 크기 654,962,688 bytes, PRAGMA quick_check=ok, DB·workflow export 파일 SHA-256과 manifest 일치. workflow 14개, active 0, credential 행 10개, execution 14건, #295 포함.
+- snapshot에 n8n config(암호화 키 설정 존재 여부만 확인), nodes/storage, 기존 workflow export JSON과 검증 manifest를 보관했다. raw WAL/SHM은 새로 복사하지 않았다. SQLite snapshot은 자체적으로 일관된 단일 DB다. credential 복호화는 테스트하지 않았다.
+- 백업은 로컬 접근 제한 폴더에만 있다. GitHub, Drive, 채팅에 DB/WAL/SHM/config/key, mock PDF/XLSX, 실행 payload를 올리지 않는다.
+
+### 격리 복원 시험의 한계
+- 백업의 추가 .n8n 복사본을 별도 user-folder parent와 웹 포트 5682, Task Broker 5683, prune=false로 기동했다. n8n 로그는 두 포트에서 ready, 이후 DB ping timeout 1회와 recovery를 보였고, Python task runner 내부 가상환경이 없다는 warning도 있었다.
+- 후속 HTTP 준비 상태를 확인할 때 listener가 없고 launcher 프로세스도 끝나 있었다. 따라서 full app restore는 완료로 판정하지 않는다. DB/config/workflow 파일과 SQL 접근은 검증했으나 /healthz HTTP 200 유지, credential decryption, 실제 백업 복구 운용은 미검증이다.
+- 실제 5678/8765는 작업 후 정상 health였다. 격리 실행은 기존 인스턴스와 포트를 공유하지 않았고 원본 파일을 바꾸지 않았다. 같은 격리 기동 방법을 반복하지 않는다.
+
+### 소스와 GitHub main 비교
+GitHub main 비교 기준은 문서 반영 전 2053b8eaad1760d863b94c6bd615d2b9112c1d11이었다. 파일 SHA-256:
+
+| 파일 | 로컬 SHA-256 | GitHub main SHA-256 | 결과 |
+|---|---|---|---|
+| scripts/analyze_gap.py | 7e6834ae8dadd7f98584f8177e7b26a457a38ae1e4cfe4251f652513d150e0ac | 8820c04451d5b9e5767ab3d8b56a95ca5b6d2389beeb303184a1ec154c3ef988 | 다름 |
+| scripts/analyzer_service.py | ebc2e697d54a6073aff056ffeec871145644bdaa92947f9730e713b84baaf5f | 650ab5a0e1678105406f79f837967d2c509e522f4f9142bea5d7fba93a9eaf6d | 다름 |
+| scripts/expire_deliveries.py | a7953dbb92051ae3303aec0510a92d0894a8f6849acd270820219d00ae614eaa | 3e2331dfc9cf916ec5eb98193cf173b7e245e12ee43ac0a92ddcbe18345f01a7 | 다름 |
+| 배달상권분석_공백상권_V1.json | e3548e29c9446abe5bab72c0a90731444d94f0f0146cd276ca2e88c94c7c13d7 | e3548e29c9446abe5bab72c0a90731444d94f0f0146cd276ca2e88c94c7c13d7 | 동일 |
+| requirements.lock | 211589d4526074132a130d058f3f0ab1f81862025161be093f7b8238b2bd24c2 | 211589d4526074132a130d058f3f0ab1f81862025161be093f7b8238b2bd24c2 | 동일 |
+| .python-version, .nvmrc, n8n-version.txt | 파일별 로컬/GitHub SHA-256 동일 | 동일 | 동일 |
+| taxonomy_integrity.py, korea_coordinates.py, build_deliverables.py, deliver_from_n8n_execution.py, start_analyzer.ps1 | 파일별 로컬/GitHub SHA-256 동일 | 동일 | 동일 |
+
+- 의미 차이: local analyze_gap.py에는 전국 store/RTree 행 수, 링크, bounds, rtreecheck 사전 검증이 47줄 추가되어 있다. analyzer_service.py에는 시작 시 공간 인덱스 preflight와 DB 파일 signature 변경 감지·분석 차단이 있다. expire_deliveries.py는 여러 execution ID, 분석중 상태, 별도 납품 폴더 ID, 중복 검사를 더 엄격하게 한다.
+- 방식 1(권장): 로컬 hardening 3파일만 검토 PR로 제안하고 Windows 소켓 허용 테스트에서 Python 전체 53개와 publication gate 10개, 회귀 검증을 통과한 후 사용자 승인으로 병합한다. 인덱스 preflight는 시작 때 점검 비용이 들지만 손상·교체를 조기에 감지한다.
+- 방식 2: 운영 로컬을 GitHub main으로 덮어써 단일 기준으로 만든다. 관리 단순성은 있지만 공간 무결성/파일 변경 감지 및 엄격한 삭제 검사가 사라질 수 있어 권하지 않는다.
+- 3파일 차이 제안은 로컬 보호 폴더에만 있다. 운영 소스 덮어쓰기나 GitHub 소스 반영은 하지 않았다. 테스트 소켓 권한 제한과 AGENTS.md의 승인 조건 때문에 PR 반영은 보류했다.
+
+### 공개 시설 모의 주문 #295
+- 기존 7개 노드 모두 success; Kakao HTTP 200/좌표 1건, 분석기 HTTP 200, 업종 247개·미분류 0, TOP20 20, A TOP10 10, publication_gate passed.
+- check-only 뒤 PDF와 XLSX를 로컬 mock-order 폴더에 만들었다. PDF 2페이지, 육안상 잘림 없음. XLSX 요약/전체 247개 시트, 247개 고유 코드, 반경별 값과 TOP20/A TOP10이 실행 결과와 일치. manifest SHA-256 일치. 결과물은 로컬에만 있다.
+- 실제 주문이나 고객 주소는 사용하지 않았다. 테스트 주소는 로그/문서/GitHub에 기록하지 않는다.
+
+### 보관·삭제 및 테스트
+- 격리 가짜 주문·테스트 DB에서 전달일+30일 만료 후 preview → apply로 납품 폴더를 삭제하고 대장을 갱신했다. 테스트 파일만 지웠으며 실제 주문/운영 execution을 삭제하지 않았다.
+- expire_deliveries.py는 연결 execution row가 남아 있으면 납품 폴더 삭제를 막으며 n8n execution을 삭제하지 않는다. 실행 중 n8n의 EXECUTIONS_DATA_PRUNE 값은 미확인이고 기존 시작 스크립트는 다음 실행에서 900시간을 설정한다. 전달 후 정확히 30일 자동 삭제는 미구현/미검증이다.
+- 비서비스 Python 테스트 46개 PASS, publication gate Node 테스트 10/10 PASS. socket 기반 Python service 테스트는 Windows WinError 10013 때문에 확인할 수 없었다.
+- 주문 처리 매뉴얼: 운영/크몽_주문처리_및_복구_매뉴얼.md. 실제 절차는 주소 수집 → 기존 n8n 수동 실행 → check-only → PDF/XLSX 생성 → 사람이 검수/전달이다. 원클릭 자동화는 없다.
+
+### 다음 작업
+1. 격리 n8n 전체 복구/HTTP health 유지의 미검증 원인을 로그로 먼저 진단하되 같은 start 방식은 반복하지 않는다. Python task-runner 경고와 HTTP 미확인을 별개로 취급한다.
+2. 현재 프로세스의 pruning env 값을 읽기 전용으로 확인할 수 있는지 검토하고, 서비스를 재시작하지 않는다.
+3. 로컬 hardening 제안을 검토하고 Windows socket 테스트를 통과시킨 뒤 사용자 승인 없이 main에 소스 파일을 직접 올리지 않는다.
+4. 30일 삭제는 현재 대장 기반 수동 절차다. 정확한 기한 자동화가 검증되기 전까지 고객에게 자동 삭제를 보장하지 않는다.
+5. 실제 주문·고객 주소는 사용하지 않는다. 크몽 #840642/#840848은 운영 안정화 작업에서 수정하지 않는다.
