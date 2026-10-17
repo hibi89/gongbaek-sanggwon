@@ -1,3 +1,12 @@
+## 2026-10-17 — 교정 ZIP GitHub·Google Drive 직접 보관 완료
+
+- **최종 다운로드 없이 직접 가져올 원본:** `판매자료/크몽_최종등록_20261017/KMONG_840642_FINAL_CORRECTED_247_20261017.zip` (비공개 GitHub `main`에 보관).
+- Google Drive 파일: https://drive.google.com/file/d/1sFr9exBL28UMjuK483Yd2YmqUcnbVqAi/view
+- 파일 크기 **1,061,871 bytes**, SHA-256 `13dafbac46b3ef7026bbac4b6bb9229183e7c49fda03640fb66425f07f5581cd`; Git Blob SHA-1 `9e5ac1caa20676be27eaf7e59688f6bf8ecbeb33` 확인.
+- **다음 Codex는 기존 사용자 로컬 Downloads를 탐색하거나 사용자에게 첨부를 요청하지 말고 GitHub에서 정확한 ZIP 파일을 가져와 해시/CRC/manifest를 확인한다.** 기존/구 ZIP 사용 금지.
+- 기존 승인 대기 크몽 상품 **#840642, 49,000원**만 대상으로 확인한다. 동명 **#840848** 수정 금지. 상품 등록 변경은 별도 Codex 작업이며 현재 ZIP 보관 완료가 실제 크몽 등록 완료를 의미하지 않는다.
+- 문서 중 이전 구버전 'ZIP은 GitHub에 없음' 표현은 당시 기록이며 현재 최종 교정 ZIP은 GitHub에 있음. 큰 전국 점포 원본 ZIP/CSV/SQLite, 운영 DB, 토큰/개인정보는 계속 GitHub 금지.
+
 # 공백상권 프로젝트 현재 상태 — 2026-10-17
 
 ## 2026-10-17 — 정정판 최종 기준 (이전 패키지 교체)
