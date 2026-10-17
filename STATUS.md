@@ -23,6 +23,19 @@
 - `scripts/start_n8n_with_retention.ps1`의 기본 자동정리 `true`/900시간에 주의. 원본 DB/WAL/SHM 보존, 자동정리 비활성화된 일회성 진단 검토. 운영 DB 갱신·정책 수정은 승인 없이 금지.
 - 분석기 `8765`는 시점에 따라 `ready`였거나 꺼져 있었음. 현행 상태와 새 토큰 연결·Kakao 인증은 반드시 새 로컬 증거로 판단.
 
+## 2026-10-17 11:47 KST — n8n 로그인/서버 최신 진단 (최신 결과, 과거 '서버 꺼짐' 보고보다 우선)
+**증거 출처:** 사용자의 Chrome 스크린샷 및 같은 시점 Codex의 Windows 읽기 전용 확인 보고. GitHub만으로 로컬 PID/HTTP를 직접 확인한 것은 아님.
+
+- Chrome `http://localhost:5678/home/workflows`에서 **로그인된 기존 n8n 화면 접속 성공**, 목록 **13개** 보임. 화면에 `공백상권 분석 V1 - 247개 업종` 및 OHORA 워크플로가 표시됨.
+- 로컬 리스너: `node.exe` **PID 10960**, `C:\Program Files\nodejs\node.exe`, n8n 진입점 `C:\Users\haein\AppData\Roaming\npm\node_modules\n8n\bin\n8n start`; 부모 `cmd.exe`는 `n8n.cmd start` 실행. **새 n8n 환경을 생성한 증거가 없고 기존 인스턴스가 동작 중인 것으로 판단**.
+- n8n DB **전체 14개(보관 1개, 미보관 13개)**, UI 미보관 13개와 일치; 공백상권 V1 **7노드, 비활성**, credential 레코드 **10개 저장**, 공백상권 credential 참조 **2개**, 미보관 워크플로 credential 참조 **18개 모두 기존 레코드에 연결**. **credential 참조가 있다는 것과 실제 API 인증에 성공했다는 것은 다름.**
+- `N8N_USER_FOLDER` 프로세스 환경변수는 직접 확인되지 않음. DB 경로 `C:\Users\haein\.n8n\database.sqlite`는 UI workflow ID/개수 대조로 추론했으며, 파일 경로 직접 입증이 아님.
+- `localhost:5678`과 `127.0.0.1:5678`은 동일 호스트의 같은 서비스에 연결 가능하지만, 브라우저 **호스트별 로그인 쿠키는 별도**여서 한쪽만 자동 로그인되었을 수 있음. **이 설명은 가능성이지 원인 확정 아님**.
+- **즉시 조치:** 기존 n8n을 그대로 사용. **새 계정/새 n8n 생성, 사용자 초기화, 재설치, 프로세스 강제 종료, DB/WAL/SHM 삭제·변경 중단**. 현재 접근 가능한 `localhost:5678` 유지.
+- 현재 프로세스는 `n8n.cmd start`로 실행됐음. `scripts/start_n8n_with_retention.ps1`에서 지정하던 `EXECUTIONS_DATA_PRUNE=true`/900시간이 **현재 프로세스에 적용됐는지는 미확인**. 직접 실행 명령만으로 환경변수 효과를 단정할 수 없음. **서비스를 재시작하지 말고 읽기 전용으로 프로세스 설정/기록 보관 여부를 조사**.
+- **다음 작업 1순위:** n8n 재설치·로그인 복구가 아니라 **분석기 8765 상태/토큰 유무 점검 → Kakao·Analyzer credential 실제 연결 검증 → 공개 주소 V1 7노드 E2E → PDF 2페이지·XLSX 247개 검수 → Analysis Input placeholder 복원**. E2E 전 완료·실판매 가능 단정 금지.
+- **추가 확인:** 앱 접속 성공과 워크플로 목록이 보이는 것은 서버/UI 접속 증거다. `Kakao` 200, 분석기 `/health` 200/ready, V1 gate PASS와 수동 CLI 납품은 **이번 진단에서 실행하지 않았음**.
+
 ## 3. 판매 자료 및 데이터
 - 분석 범위: 2026-06-30 전국 점포 2,772,484건, 247개 업종, 주소 1곳, 1~5km, TOP20/A TOP10, PDF+XLSX.
 - 초기 권장 가격 **49,000원 유지**, 79,000원은 첫 유료 주문 이후 검토.
